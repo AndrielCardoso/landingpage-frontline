@@ -8,9 +8,22 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Frontline | Decisão Clínica Inteligente",
-  description: "O sistema de suporte à decisão clínica definitivo para farmácias modernas.",
+  metadataBase: new URL("https://frontlinehelp.com.br"),
+  title: {
+    default: "Frontline | Decisão Clínica e Inteligência para Farmácias",
+    template: "%s | Frontline"
+  },
+  description: "Acesse a plataforma definitiva de suporte à decisão clínica. Prontuário digital, fluxogramas inteligentes e segurança total para sua farmácia.",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "./",
+  }
 };
+
+import { JsonLd } from "./components/json-ld";
 
 export default function RootLayout({
   children,
@@ -19,7 +32,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="scroll-smooth">
-      <body className={`${inter.variable} font-sans min-h-screen`}>{children}</body>
+      <body className={`${inter.variable} font-sans min-h-screen`}>
+        <JsonLd />
+        {children}
+      </body>
     </html>
   );
 }
