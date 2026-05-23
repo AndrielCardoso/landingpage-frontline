@@ -89,7 +89,7 @@ export const PlansSection = () => {
           {/* B2B Card */}
           <motion.div
             variants={cardVariants}
-            className="p-8 md:p-10 rounded-2xl bg-[#141419] border border-[#262630] hover:border-[#0066FF]/30 transition-all duration-300 group"
+            className="p-6 sm:p-8 md:p-10 rounded-2xl bg-[#141419] border border-[#262630] hover:border-[#0066FF]/30 transition-all duration-300 group"
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-xl bg-[#0066FF]/10 flex items-center justify-center text-[#0066FF]">
@@ -134,7 +134,7 @@ export const PlansSection = () => {
           {/* B2C Card */}
           <motion.div
             variants={cardVariants}
-            className="p-8 md:p-10 rounded-2xl bg-[#141419] border border-[#0066FF]/30 hover:border-[#0066FF]/50 transition-all duration-300 relative overflow-hidden group"
+            className="p-6 sm:p-8 md:p-10 rounded-2xl bg-[#141419] border border-[#0066FF]/30 hover:border-[#0066FF]/50 transition-all duration-300 relative overflow-hidden group"
           >
             {/* Popular badge */}
             <div className="absolute top-6 right-6">

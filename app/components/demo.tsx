@@ -57,7 +57,7 @@ export const DemoSection = () => {
           <div className="rounded-2xl overflow-hidden bg-[#0A0A0F] border border-[#262630] shadow-[0_0_80px_rgba(0,102,255,0.07)] flex flex-col md:flex-row">
             
             {/* Sidebar Tabs */}
-            <div className="w-full md:w-72 bg-[#141419] border-r border-[#262630] p-4 flex flex-col gap-2 shrink-0 overflow-x-auto md:overflow-visible flex-row md:flex-col">
+            <div className="w-full md:w-72 bg-[#141419] border-b md:border-b-0 md:border-r border-[#262630] p-4 flex flex-row md:flex-col gap-2 shrink-0 overflow-x-auto md:overflow-visible scroll-smooth">
               {tabs.map((tab) => (
                 <button
                   key={tab.id}
@@ -81,7 +81,7 @@ export const DemoSection = () => {
             </div>
 
             {/* Content Area */}
-            <div className="flex-1 p-6 md:p-10 bg-[#0A0A0F] min-h-[550px] flex items-center justify-center relative overflow-hidden">
+            <div className="flex-1 p-4 sm:p-6 md:p-10 bg-[#0A0A0F] min-h-[400px] md:min-h-[550px] flex items-center justify-center relative overflow-hidden">
               <AnimatePresence mode="wait">
                 {activeTab === "consulta" && <ConsultaMock key="consulta" />}
                 {activeTab === "comparacao" && <ComparacaoMock key="comparacao" />}

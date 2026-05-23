@@ -60,11 +60,11 @@ export const StepsSection = () => {
                 hidden: { opacity: 0, x: -30, scale: 0.95 },
                 visible: { opacity: 1, x: 0, scale: 1, transition: { type: "spring", stiffness: 100, damping: 20 } }
               }}
-              className="flex gap-8 group"
+              className="flex gap-4 sm:gap-8 group"
             >
               {/* Number + Line */}
               <div className="flex flex-col items-center">
-                <div className="w-14 h-14 rounded-2xl bg-[#141419] border border-[#262630] flex items-center justify-center text-xl font-black text-[#0066FF] group-hover:border-[#0066FF]/30 transition-colors shrink-0">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#141419] border border-[#262630] flex items-center justify-center text-lg sm:text-xl font-black text-[#0066FF] group-hover:border-[#0066FF]/30 transition-colors shrink-0">
                   {step.number}
                 </div>
                 {i < steps.length - 1 && (
@@ -79,8 +79,8 @@ export const StepsSection = () => {
               </div>
 
               {/* Content */}
-              <div className="pb-12">
-                <h3 className="text-xl font-bold text-white mb-2 tracking-tight">
+              <div className="pb-10 sm:pb-12">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 tracking-tight">
                   {step.title}
                 </h3>
                 <p className="text-[#9CA3AF] text-sm leading-relaxed">

@@ -58,7 +58,7 @@ export const PricingSection = () => {
           {/* B2C - Monthly/Annual */}
           <motion.div
             variants={cardVariants}
-            className="p-8 md:p-10 rounded-2xl bg-[#141419] border border-[#0066FF]/30 relative overflow-hidden"
+            className="p-6 sm:p-8 md:p-10 rounded-2xl bg-[#141419] border border-[#0066FF]/30 relative overflow-hidden"
           >
             <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#0066FF] to-transparent" />
             

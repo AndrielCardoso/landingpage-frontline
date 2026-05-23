@@ -55,11 +55,11 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-[1.1] mb-6 max-w-5xl mx-auto h-[120px] sm:h-[140px] md:h-[160px]"
+            className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-[1.2] sm:leading-[1.1] mb-6 max-w-5xl mx-auto h-auto min-h-[140px] sm:h-[140px] md:h-[160px]"
           >
             Decisão clínica inteligente
-            <br />
-            <span className="text-[#0066FF] whitespace-nowrap">
+            <br className="hidden sm:block" />
+            <span className="text-[#0066FF] block sm:inline whitespace-normal sm:whitespace-nowrap mt-2 sm:mt-0">
               {text}
               <motion.span
                 animate={{ opacity: [1, 0] }}
@@ -85,14 +85,14 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 w-full px-4 sm:px-0"
           >
             {/* B2C CTA - Primary */}
             <a
               href="https://frontline-gestao.web.app/login"
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-[#0066FF] text-white font-semibold text-base hover:bg-[#0052CC] transition-all duration-200 shadow-[0_0_30px_rgba(0,102,255,0.3)] hover:shadow-[0_0_40px_rgba(0,102,255,0.45)]"
+              className="group flex sm:inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#0066FF] text-white font-semibold text-base hover:bg-[#0052CC] transition-all duration-200 shadow-[0_0_30px_rgba(0,102,255,0.3)] hover:shadow-[0_0_40px_rgba(0,102,255,0.45)] w-full sm:w-auto"
             >
               Criar minha conta
               <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
@@ -103,7 +103,7 @@ export const Hero = () => {
               href="https://wa.me/5547988141031?text=Olá!%20Tenho%20interesse%20no%20Frontline%20para%20minha%20empresa."
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-transparent border border-white/15 text-[#EDEDED] font-semibold text-base hover:bg-white/5 hover:border-white/25 transition-all duration-200"
+              className="group flex sm:inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-transparent border border-white/15 text-[#EDEDED] font-semibold text-base hover:bg-white/5 hover:border-white/25 transition-all duration-200 w-full sm:w-auto"
             >
               <MessageCircle className="w-4 h-4" />
               Falar com consultor
