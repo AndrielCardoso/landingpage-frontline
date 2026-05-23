@@ -1,41 +1,110 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { motion } from "framer-motion";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X } from "lucide-react";
+
+const navLinks = [
+  { label: "Sobre", href: "#sobre" },
+  { label: "Recursos", href: "#recursos" },
+  { label: "Planos", href: "#planos" },
+];
 
 export const Header = () => {
-  return (
-    <motion.header
-      initial={{ y: -20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      className="fixed top-0 left-0 right-0 z-50 flex items-center justify-center p-4"
-    >
-      <nav className="flex items-center justify-between w-full max-w-6xl px-6 py-1 bg-white/70 backdrop-blur-md border border-slate-200/50 rounded-full shadow-sm">
-        <Link href="/" className="flex items-center overflow-hidden">
-          <Image
-            src="/Logo_Frontline.png"
-            alt="Frontline Help Logo"
-            width={240}
-            height={80}
-            priority
-            className="h-12 md:h-16 w-auto object-contain transition-transform hover:scale-105"
-          />
-        </Link>
+  const [scrolled, setScrolled] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
-        <div className="flex items-center gap-6 md:gap-10 text-sm font-semibold text-slate-600 mr-2">
-          <Link href="#sobre" className="hover:text-primary transition-colors">
-            Sobre
-          </Link>
-          <Link href="#recursos" className="hover:text-primary transition-colors">
-            Recursos
-          </Link>
-          <Link href="#vantagens" className="hover:text-primary transition-colors">
-            Vantagens
-          </Link>
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled
+          ? "bg-[#0A0A0F]/90 backdrop-blur-xl border-b border-white/5"
+          : "bg-transparent"
+      }`}
+    >
+      <div className="container mx-auto px-6">
+        <div className="flex items-center justify-between h-16 md:h-20">
+          {/* Logo */}
+          <a href="/" className="flex items-center gap-3">
+            <img
+              src="/Logo_Frontline.png"
+              alt="Frontline Help"
+              className="h-8 md:h-10 w-auto"
+            />
+          </a>
+
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex items-center gap-10">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-sm font-medium text-[#9CA3AF] hover:text-white transition-colors duration-200"
+              >
+                {link.label}
+              </a>
+            ))}
+          </nav>
+
+          {/* Desktop CTA */}
+          <a
+            href="https://frontline-gestao.web.app/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#0066FF] text-white text-sm font-semibold hover:bg-[#0052CC] transition-colors duration-200"
+          >
+            Começar agora
+          </a>
+
+          {/* Mobile Hamburger */}
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="md:hidden p-2 text-[#9CA3AF] hover:text-white transition-colors"
+            aria-label="Menu"
+          >
+            {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
-      </nav>
-    </motion.header>
+      </div>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            className="md:hidden bg-[#0A0A0F]/95 backdrop-blur-xl border-t border-white/5"
+          >
+            <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
+              {navLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="text-base font-medium text-[#9CA3AF] hover:text-white transition-colors py-2"
+                >
+                  {link.label}
+                </a>
+              ))}
+              <a
+                href="https://frontline-gestao.web.app/login"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-[#0066FF] text-white text-sm font-semibold hover:bg-[#0052CC] transition-colors mt-2"
+              >
+                Começar agora
+              </a>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </header>
   );
 };

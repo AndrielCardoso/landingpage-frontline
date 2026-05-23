@@ -1,34 +1,37 @@
 import { Header } from "./components/header";
 import { Hero } from "./components/hero";
 import { AboutSection } from "./components/about";
+import { PlansSection } from "./components/plans";
 import { Features } from "./components/features";
+import { DemoSection } from "./components/demo";
 import { StandardizationSection } from "./components/standardization";
-import { WhiteLabelSection } from "./components/whitelabel";
+import { PricingSection } from "./components/pricing";
 import { StepsSection } from "./components/steps";
 import { TrustSection } from "./components/trust";
-import { AdvantagesSection } from "./components/advantages";
 import { Footer } from "./components/footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Frontline | Decisão Clínica Inteligente para Farmácias",
-  description: "A plataforma definitiva para farmácias modernas. Prontuário digital, fluxogramas inteligentes de suporte à decisão e segurança total no autoatendimento clínico.",
+  description:
+    "A plataforma definitiva para farmácias modernas. Prontuário digital, fluxogramas inteligentes de suporte à decisão e segurança total no autoatendimento clínico.",
   keywords: [
-    "farmácia clínica", 
-    "decisão clínica", 
-    "prontuário digital farmacêutico", 
-    "suporte à decisão", 
+    "farmácia clínica",
+    "decisão clínica",
+    "prontuário digital farmacêutico",
+    "suporte à decisão",
     "fluxogramas inteligentes",
     "segurança clínica",
     "software para farmácias",
     "farmácia hospitalar",
     "gestão farmacêutica",
-    "white-label healthcare"
+    "white-label healthcare",
   ],
   authors: [{ name: "Frontline Help", url: "https://frontlinehelp.com.br" }],
   openGraph: {
     title: "Frontline | Decisão Clínica Inteligente",
-    description: "Transforme sua farmácia com protocolos clínicos automatizados e segurança total.",
+    description:
+      "Transforme sua farmácia com protocolos clínicos automatizados e segurança total.",
     url: "https://frontlinehelp.com.br",
     siteName: "Frontline Help",
     locale: "pt_BR",
@@ -45,23 +48,25 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Frontline | Decisão Clínica Inteligente",
-    description: "O sistema de suporte à decisão clínica definitivo para farmácias modernas.",
+    description:
+      "O sistema de suporte à decisão clínica definitivo para farmácias modernas.",
     images: ["/Logo_Frontline.png"],
   },
 };
 
 export default function Home() {
   return (
-    <main className="min-h-screen selection:bg-primary/20 selection:text-primary">
+    <main className="min-h-screen">
       <Header />
       <Hero />
       <AboutSection />
+      <PlansSection />
       <Features />
+      <DemoSection />
       <StandardizationSection />
-      <WhiteLabelSection />
+      <PricingSection />
       <StepsSection />
       <TrustSection />
-      <AdvantagesSection />
       <Footer />
     </main>
   );

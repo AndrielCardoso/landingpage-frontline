@@ -1,95 +1,129 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Play, ArrowRight } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
+
+const phrases = [
+  "para quem cuida de pessoas.",
+  "para quem quer mais agilidade.",
+  "para gerar mais confiança.",
+  "para otimizar o atendimento.",
+  "para reduzir erros do dia a dia.",
+  "para farmácias de excelência.",
+];
 
 export const Hero = () => {
+  const [text, setText] = useState("");
+  const [phraseIndex, setPhraseIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const typingSpeed = isDeleting ? 30 : 80;
+    const currentPhrase = phrases[phraseIndex];
+
+    const timeout = setTimeout(() => {
+      if (!isDeleting && text === currentPhrase) {
+        setTimeout(() => setIsDeleting(true), 2000);
+      } else if (isDeleting && text === "") {
+        setIsDeleting(false);
+        setPhraseIndex((prev) => (prev + 1) % phrases.length);
+      } else {
+        setText(
+          currentPhrase.substring(0, text.length + (isDeleting ? -1 : 1))
+        );
+      }
+    }, typingSpeed);
+
+    return () => clearTimeout(timeout);
+  }, [text, isDeleting, phraseIndex]);
+
   return (
-    <section className="relative pt-32 pb-20 overflow-hidden">
-      {/* Background Decorative Elements */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-[radial-gradient(circle_at_center,_var(--color-primary)_0%,_transparent_70%)] opacity-[0.03] pointer-events-none" />
-      
-      <div className="container mx-auto px-6 max-w-6xl">
-        <div className="text-center mb-16">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      {/* Atmospheric glow */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#0066FF]/8 rounded-full blur-[120px]" />
+        <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[#10B981]/5 rounded-full blur-[100px]" />
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="max-w-5xl mx-auto text-center">
+
+
+          {/* Headline */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6 leading-[1.1]"
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-[1.1] mb-6 max-w-5xl mx-auto h-[120px] sm:h-[140px] md:h-[160px]"
           >
-            O poder da decisão clínica <br />
-            <span className="text-primary italic">na ponta dos seus dedos.</span>
+            Decisão clínica inteligente
+            <br />
+            <span className="text-[#0066FF] whitespace-nowrap">
+              {text}
+              <motion.span
+                animate={{ opacity: [1, 0] }}
+                transition={{ repeat: Infinity, duration: 0.8 }}
+                className="inline-block w-[3px] h-[0.9em] bg-[#0066FF] ml-1 align-middle -mt-1"
+              />
+            </span>
           </motion.h1>
-          
+
+          {/* Subtitle */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-10 leading-relaxed"
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-lg md:text-xl text-[#9CA3AF] max-w-2xl mx-auto mb-12 leading-relaxed"
           >
-            A plataforma definitiva para farmácias: prontuário digital, fluxogramas inteligentes 
-            e segurança total no balcão e no autoatendimento.
+            Prontuário digital, fluxogramas inteligentes e suporte em tempo real
+            para farmácias que levam a saúde a sério.
           </motion.p>
-          
+
+          {/* CTAs */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="flex items-center justify-center"
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <a 
-              href="https://wa.me/554788141031?text=Olá,%20estou%20interessado%20em%20contratar%20o%20Frontline%20Help%20para%20a%20minha%20farmácia.%20Gostaria%20de%20mais%20detalhes."
+            {/* B2C CTA - Primary */}
+            <a
+              href="https://frontline-gestao.web.app/login"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-full font-bold shadow-xl shadow-primary/20 transition-all flex items-center justify-center gap-2 group"
+              className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-[#0066FF] text-white font-semibold text-base hover:bg-[#0052CC] transition-all duration-200 shadow-[0_0_30px_rgba(0,102,255,0.3)] hover:shadow-[0_0_40px_rgba(0,102,255,0.45)]"
             >
-              Falar com Consultor
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              Criar minha conta
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+            </a>
+
+            {/* B2B CTA - Secondary */}
+            <a
+              href="https://wa.me/5547988141031?text=Olá!%20Tenho%20interesse%20no%20Frontline%20para%20minha%20empresa."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-transparent border border-white/15 text-[#EDEDED] font-semibold text-base hover:bg-white/5 hover:border-white/25 transition-all duration-200"
+            >
+              <MessageCircle className="w-4 h-4" />
+              Falar com consultor
             </a>
           </motion.div>
-        </div>
 
-        {/* Mockup Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 60 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.8 }}
-          className="relative max-w-4xl mx-auto"
-        >
-          {/* Tablet Frame */}
-          <div className="relative aspect-[16/10] bg-slate-900 rounded-[2.5rem] p-3 shadow-2xl border-[8px] border-slate-800 outline outline-1 outline-slate-700/50">
-            {/* Inner Screen - Video Player */}
-            <div className="w-full h-full bg-slate-900 rounded-[1.8rem] overflow-hidden relative shadow-inner">
-              <video
-                src="/Institucional_Frontline.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full h-full object-cover"
-              />
-              {/* Interaction Overlay / Glass effect */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-transparent pointer-events-none" />
-            </div>
-          </div>
-          
-          {/* Floaties */}
-          <motion.div
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute -top-6 -right-6 md:-right-12 bg-white p-4 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3 z-10"
+          {/* Trust line */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="text-xs text-[#9CA3AF]/60 mt-8"
           >
-            <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
-              <span className="text-green-600 font-bold">98%</span>
-            </div>
-            <div className="text-left leading-tight">
-              <p className="text-xs font-bold text-slate-900">Precisão Clínica</p>
-              <p className="text-[10px] text-slate-500">Upgrade sugerido</p>
-            </div>
-          </motion.div>
-        </motion.div>
+            Para profissionais e empresas do setor farmacêutico
+          </motion.p>
+        </div>
       </div>
+
+      {/* Bottom gradient fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0A0A0F] to-transparent" />
     </section>
   );
 };

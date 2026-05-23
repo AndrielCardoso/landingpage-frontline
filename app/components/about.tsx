@@ -1,95 +1,91 @@
 "use client";
 
-import React from "react";
-import { motion } from "framer-motion";
-import { ShieldCheck, Zap, Stethoscope, Briefcase } from "lucide-react";
+import React, { useEffect, useRef } from "react";
+import { motion, useInView, animate } from "framer-motion";
+
+const AnimatedNumber = ({ value, suffix = "" }: { value: number; suffix?: string }) => {
+  const ref = useRef<HTMLSpanElement>(null);
+  const isInView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    if (isInView) {
+      const controls = animate(0, value, {
+        duration: 2,
+        ease: "easeOut",
+        onUpdate(v) {
+          if (ref.current) {
+            ref.current.textContent = Math.round(v) + suffix;
+          }
+        },
+      });
+      return () => controls.stop();
+    }
+  }, [isInView, value, suffix]);
+
+  return <span ref={ref}>0{suffix}</span>;
+};
 
 export const AboutSection = () => {
   return (
-    <section id="sobre" className="py-24 bg-white relative overflow-hidden">
-      <div className="container mx-auto px-6 max-w-6xl">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Left Column: Mission/Reason */}
+    <section id="sobre" className="py-24 md:py-32 relative">
+      <div className="container mx-auto px-6">
+        <div className="max-w-5xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start"
           >
-            <div className="flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest mb-6">
-              <ShieldCheck className="w-5 h-5" />
-              Sobre o Frontline
-            </div>
-            
-            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-8 leading-tight">
-              Quem somos e <br />
-              por que o <span className="text-primary italic whitespace-nowrap">Frontline Help?</span>
-            </h2>
-            
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 flex items-center gap-3">
-                  <span className="w-8 h-1 bg-primary rounded-full" />
-                  Quem somos
-                </h3>
-                <p className="text-slate-600 leading-relaxed">
-                  Somos uma empresa focada em ajudar farmácias a padronizar rotinas de atendimentos com sistemas preparados com as mais recentes atualizações científicas e protocolos clínicos. Nosso objetivo é aumentar o lucro da sua farmácia através de uma tecnologia simples, porém extremamente eficaz.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 flex items-center gap-3">
-                  <span className="w-8 h-1 bg-primary rounded-full" />
-                  Por que o Frontline
-                </h3>
-                <p className="text-slate-600 leading-relaxed">
-                  Criada para ser simples e rápida no dia a dia, a ferramenta organiza, padroniza e fortalece os serviços clínicos da farmácia, sem a necessidade de investir tempo excessivo com treinamentos complexos.
-                </p>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Right Column: The 2 Fronts */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-slate-50 rounded-[3rem] p-8 md:p-12 border border-slate-100 shadow-sm relative overflow-hidden"
-          >
-            {/* Background design element */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -mr-32 -mt-32 blur-3xl" />
-            
-            <h3 className="text-2xl font-bold text-slate-900 mb-10 text-center">
-              Atuação em <span className="text-primary">2 Frentes</span> estratégicas
-            </h3>
-
-            <div className="space-y-8 relative z-10">
-              <div className="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 text-primary">
-                  <Stethoscope className="w-6 h-6" />
-                </div>
-                <h4 className="text-lg font-bold text-slate-900 mb-2">Frente Clínica (Principal)</h4>
-                <p className="text-sm text-slate-600 leading-relaxed">
-                  Análises de prescrição, cálculos de doses automáticos e acesso a fluxogramas clínicos de última geração. Conta com um prontuário digital completo para suprir todas as necessidades do paciente e da farmácia.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 bg-slate-100 rounded-2xl flex items-center justify-center mb-4 text-slate-600">
-                  <Briefcase className="w-6 h-6" />
-                </div>
-                <h4 className="text-lg font-bold text-slate-900 mb-2">Frente Burocrática</h4>
-                <p className="text-sm text-slate-600 leading-relaxed">
-                  Apoio jurídico e legislativo instantâneo, além de guias de intercambialidade de medicamentos para facilitar o dia a dia administrativo do farmacêutico.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-10 pt-8 border-t border-slate-200 text-center">
-              <p className="text-xs text-slate-400 font-medium uppercase tracking-[0.2em]">
-                Simplicidade que gera resultado clínico
+            {/* Left - Headline */}
+            <div>
+              <p className="text-sm font-semibold text-[#0066FF] uppercase tracking-wider mb-4">
+                Sobre o Frontline
               </p>
+              <h2 className="text-3xl md:text-5xl font-bold tracking-tight leading-[1.1] mb-6">
+                Tecnologia clínica
+                <br />
+                <span className="text-[#9CA3AF]">que entende o balcão.</span>
+              </h2>
+              <div className="w-16 h-1 bg-[#0066FF] rounded-full" />
+            </div>
+
+            {/* Right - Description */}
+            <div className="space-y-6">
+              <p className="text-[#9CA3AF] text-lg leading-relaxed">
+                O <span className="text-white font-medium">Frontline Help</span> é
+                uma plataforma de suporte à decisão clínica projetada
+                especificamente para o dia a dia da farmácia. Não é um sistema
+                genérico adaptado, foi construído por quem vive o balcão.
+              </p>
+              <p className="text-[#9CA3AF] text-lg leading-relaxed">
+                Com fluxogramas inteligentes, prontuário digital e cálculos
+                automatizados, o Frontline elimina o achismo e transforma cada
+                atendimento em uma experiência segura e padronizada.
+              </p>
+              <div className="flex items-center gap-8 pt-4">
+                <div>
+                  <p className="text-3xl font-black text-white">
+                    <AnimatedNumber value={98} suffix="%" />
+                  </p>
+                  <p className="text-sm text-[#9CA3AF]">Precisão clínica</p>
+                </div>
+                <div className="w-px h-12 bg-[#262630]" />
+                <div>
+                  <p className="text-3xl font-black text-white">
+                    <AnimatedNumber value={2} suffix="x" />
+                  </p>
+                  <p className="text-sm text-[#9CA3AF]">Mais agilidade</p>
+                </div>
+                <div className="w-px h-12 bg-[#262630]" />
+                <div>
+                  <p className="text-3xl font-black text-white">
+                    <AnimatedNumber value={100} suffix="%" />
+                  </p>
+
+                  <p className="text-sm text-[#9CA3AF]">Digital</p>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>

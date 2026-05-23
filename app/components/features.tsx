@@ -2,221 +2,154 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { 
-  Calculator, 
-  ArrowLeftRight, 
-  ClipboardList, 
-  Monitor, 
-  ShieldCheck, 
-  Zap, 
-  Search,
+import {
+  Calculator,
+  FileHeart,
+  AlertTriangle,
+  GitFork,
+  Pill,
+  Baby,
+  ClipboardCheck,
+  Shield,
+  Printer,
+  Users,
   BarChart3,
   Stethoscope,
-  Syringe,
-  Pill,
-  Smartphone,
-  LayoutGrid,
-  Baby,
-  CalendarCheck,
-  Repeat,
-  Gavel,
+  FlaskConical,
   BookOpen,
-  Box,
-  Scale,
-  Library,
-  Building2,
-  Palette
+  HeartPulse,
+  Syringe,
 } from "lucide-react";
 
 const mainFeatures = [
   {
-    title: "Calculadora de Doses",
-    description: "Cálculos pediátricos e adultos precisos em segundos, garantindo a segurança posológica ideal para cada paciente.",
     icon: Calculator,
-    color: "bg-blue-500",
-    lightColor: "bg-blue-50",
-    textColor: "text-blue-600"
+    title: "Calculadora de Doses",
+    desc: "Cálculos precisos para pediatria e adultos com ajuste automático por peso e idade.",
   },
   {
+    icon: FileHeart,
     title: "Prontuário Digital",
-    description: "Histórico clínico completo com registros de consultas, vacinação e evolução do paciente em uma interface segura.",
-    icon: ClipboardList,
-    color: "bg-primary",
-    lightColor: "bg-primary/5",
-    textColor: "text-primary"
+    desc: "Histórico completo do paciente com alergias, medicações e atendimentos anteriores.",
+    exclusive: true,
   },
   {
+    icon: AlertTriangle,
     title: "Interações Medicamentosas",
-    description: "Análise inteligente e instantânea de possíveis conflitos entre medicamentos, suplementos e alimentos.",
-    icon: Pill,
-    color: "bg-emerald-500",
-    lightColor: "bg-emerald-50",
-    textColor: "text-emerald-600"
+    desc: "Detecção instantânea de interações perigosas entre medicamentos e alimentos.",
   },
   {
+    icon: GitFork,
     title: "Triagem Avançada",
-    description: "Protocolos clínicos integrados para direcionamento rápido e eficiente na atenção farmacêutica primária.",
-    icon: Stethoscope,
-    color: "bg-slate-800",
-    lightColor: "bg-slate-100",
-    textColor: "text-slate-900"
-  }
+    desc: "Fluxogramas inteligentes que guiam o atendimento do início ao fim.",
+  },
 ];
 
 const secondaryFeatures = [
-  { 
-    title: "Segurança total", 
-    icon: ShieldCheck,
-    details: "Criptografia de ponta a ponta e redundância de dados em conformidade com a LGPD."
-  },
-  { 
-    title: "Performance extrema", 
-    icon: Zap,
-    details: "Carregamento instantâneo em qualquer dispositivo, mesmo em conexões lentas."
-  },
-  { 
-    title: "Lactação", 
-    icon: Baby,
-    details: "Base de dados completa sobre a segurança de fármacos durante o período de amamentação."
-  },
-  { 
-    title: "Validade de receitas", 
-    icon: CalendarCheck,
-    details: "Sistema inteligente de verificação de prazos e conformidade legal de prescrições."
-  },
-  { 
-    title: "Intercambialidade", 
-    icon: Repeat,
-    details: "Guia rápido de medicamentos equivalentes e intercambiáveis com segurança técnica."
-  },
-  { 
-    title: "Dúvidas de legislação", 
-    icon: Gavel,
-    details: "Acesso rápido às normas da ANVISA e diretrizes do Conselho Federal de Farmácia."
-  },
-  { 
-    title: "Guia de dispensação", 
-    icon: BookOpen,
-    details: "Orientações passo a passo para a entrega segura de medicamentos controlados e comuns."
-  },
-  { 
-    title: "Armazenamento correto", 
-    icon: Box,
-    details: "Instruções específicas sobre temperatura, luz e umidade para manutenção da estabilidade."
-  },
-  { 
-    title: "Cálculo de IMC", 
-    icon: Scale,
-    details: "Ferramenta integrada para avaliação rápida do índice de massa corporal e riscos associados."
-  },
-  { 
-    title: "Dicionário da saúde", 
-    icon: Library,
-    details: "Glossário técnico completo de termos clínicos e farmacêuticos para consulta rápida."
-  },
-  { 
-    title: "Busca inteligente", 
-    icon: Search,
-    details: "Motor de busca semântico que entende princípios ativos, nomes comerciais e sintomas."
-  },
-  { 
-    title: "Relatórios clínicos", 
-    icon: BarChart3,
-    details: "Geração automática de relatórios detalhados para pacientes e médicos assistentes."
-  },
-  { 
-    title: "Gestão vacinal", 
-    icon: Syringe,
-    details: "Controle de lotes, datas de aplicação e esquemas vacinais recomendados."
-  },
-  { 
-    title: "App mobile", 
-    icon: Smartphone,
-    details: "Versão otimizada para smartphones para consultas rápidas na palma da mão."
-  },
-  { 
-    title: "Multi-unidades", 
-    icon: Building2,
-    details: "Gerenciamento centralizado para redes de farmácias com sincronização em tempo real."
-  },
-  { 
-    title: "White-label", 
-    icon: Palette,
-    details: "Possibilidade de personalizar o sistema com a identidade visual da sua farmácia."
-  }
+  { icon: Pill, label: "Monografias" },
+  { icon: Baby, label: "Pediatria" },
+  { icon: ClipboardCheck, label: "Protocolos" },
+  { icon: Shield, label: "Segurança" },
+  { icon: Printer, label: "Laudos" },
+  { icon: Users, label: "Equipe" },
+  { icon: BarChart3, label: "Relatórios" },
+  { icon: Stethoscope, label: "Consultas" },
+  { icon: FlaskConical, label: "Fórmulas" },
+  { icon: BookOpen, label: "Referências" },
+  { icon: HeartPulse, label: "Lactação" },
+  { icon: Syringe, label: "Vacinas" },
 ];
 
 export const Features = () => {
   return (
-    <section id="recursos" className="py-24 bg-white">
-      <div className="container mx-auto px-6 max-w-6xl">
-        <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
-            Arsenal Clínico Completo
-          </h2>
-          <p className="text-slate-600 text-center max-w-2xl mx-auto">
-            Mais de 17 ferramentas desenvolvidas por especialistas para elevar o nível 
-            da atenção farmacêutica no seu estabelecimento.
-          </p>
-        </div>
+    <section id="recursos" className="py-24 md:py-32 relative">
+      {/* Separator */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#262630] to-transparent" />
 
-        {/* Main Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {mainFeatures.map((feature, index) => (
+      <div className="container mx-auto px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <p className="text-sm font-semibold text-[#0066FF] uppercase tracking-wider mb-4">
+            Recursos
+          </p>
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
+            Arsenal clínico completo
+            <br />
+            <span className="text-[#9CA3AF]">na palma da sua mão.</span>
+          </h2>
+        </motion.div>
+
+        {/* Main Features Grid */}
+        <motion.div
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1, transition: { staggerChildren: 0.1 } }
+          }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-5xl mx-auto mb-16"
+        >
+          {mainFeatures.map((f, i) => (
             <motion.div
-              key={feature.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -5 }}
-              className="p-8 bg-slate-50 border border-slate-100 rounded-3xl hover:shadow-xl hover:shadow-slate-200/50 transition-all group"
+              key={i}
+              variants={{
+                hidden: { opacity: 0, y: 30, scale: 0.95 },
+                visible: { opacity: 1, y: 0, scale: 1, transition: { type: "spring", stiffness: 100, damping: 20 } }
+              }}
+              className="p-7 rounded-2xl bg-[#141419] border border-[#262630] hover:border-[#0066FF]/20 transition-all duration-300 group"
             >
-              <div className={`${feature.lightColor} w-12 h-12 rounded-2xl flex items-center justify-center mb-6 transition-transform group-hover:scale-110`}>
-                <feature.icon className={`w-6 h-6 ${feature.textColor}`} />
+              <div className="flex items-center justify-between mb-5">
+                <div className="w-10 h-10 rounded-xl bg-[#0066FF]/10 flex items-center justify-center text-[#0066FF] group-hover:scale-110 transition-transform">
+                  <f.icon className="w-5 h-5" />
+                </div>
+                {f.exclusive && (
+                  <span className="px-2.5 py-1 rounded-md bg-[#0066FF]/10 text-[#0066FF] text-[10px] font-bold uppercase tracking-wider border border-[#0066FF]/20">
+                    Exclusivo empresas
+                  </span>
+                )}
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">{feature.title}</h3>
-              <p className="text-sm text-slate-600 leading-relaxed">
-                {feature.description}
+              <h3 className="text-lg font-bold text-white mb-2 tracking-tight">
+                {f.title}
+              </h3>
+              <p className="text-sm text-[#9CA3AF] leading-relaxed">
+                {f.desc}
               </p>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
 
-        {/* Secondary Grid */}
-        <div className="bg-slate-50/50 rounded-[2.5rem] p-8 md:p-12 border border-slate-100">
-          <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest text-center mb-10">
-            E muito mais ferramentas de precisão
-          </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-y-12 gap-x-6">
-            {secondaryFeatures.map((feature, index) => (
+        {/* Secondary Features */}
+        <motion.div
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1, transition: { staggerChildren: 0.05, delayChildren: 0.2 } }
+          }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          className="max-w-4xl mx-auto"
+        >
+          <motion.p variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} className="text-center text-sm text-[#9CA3AF] mb-6">
+            E mais de 20 funcionalidades integradas:
+          </motion.p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {secondaryFeatures.map((f, i) => (
               <motion.div
-                key={feature.title}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.1 + index * 0.05 }}
-                className="relative flex flex-col items-center gap-3 text-center group cursor-help"
+                key={i}
+                variants={{ hidden: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1, transition: { type: "spring" } } }}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/5 text-sm text-[#9CA3AF] hover:text-white hover:border-white/15 transition-all"
               >
-                {/* Tooltip */}
-                <div className="absolute bottom-[110%] left-1/2 -translate-x-1/2 w-48 p-3 bg-slate-900/90 text-white text-[10px] rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none z-20 backdrop-blur-sm transform translate-y-2 group-hover:translate-y-0 shadow-xl border border-slate-700/50">
-                  <div className="relative">
-                    {feature.details}
-                    {/* Tooltip Arrow */}
-                    <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 border-8 border-transparent border-t-slate-900/90" />
-                  </div>
-                </div>
-
-                <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-slate-400 group-hover:text-primary group-hover:border-primary/20 transition-all group-hover:shadow-lg group-hover:shadow-primary/5">
-                  <feature.icon className="w-5 h-5" />
-                </div>
-                <span className="text-xs font-semibold text-slate-600 group-hover:text-slate-900 transition-colors">
-                  {feature.title}
-                </span>
+                <f.icon className="w-3.5 h-3.5" />
+                {f.label}
               </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

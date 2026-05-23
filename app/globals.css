@@ -1,31 +1,46 @@
 @import "tailwindcss";
 
-:root {
-  --background: #f8fafc; /* slate-50 */
-  --foreground: #0f172a; /* slate-900 */
-  --primary: #0066FF;
-  --secondary: #10b981;
-}
+@theme {
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-primary: var(--primary);
-  --color-secondary: var(--secondary);
   
-  --font-sans: "Inter", var(--font-geist-sans);
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* Dark Premium Palette */
+  --color-background: #0A0A0F;
+  --color-surface: #141419;
+  --color-surface-elevated: #1C1C24;
+  --color-foreground: #EDEDED;
+  --color-muted: #9CA3AF;
+  --color-border: #262630;
+  
+  /* Brand Colors */
+  --color-primary: #0066FF;
+  --color-primary-hover: #0052CC;
+  --color-secondary: #10B981;
 }
 
 @layer base {
-  * {
-    @apply border-slate-200;
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    line-height: 1.6;
+  }
+
+  ::selection {
+    background-color: rgba(0, 102, 255, 0.25);
+    color: #fff;
   }
 }
