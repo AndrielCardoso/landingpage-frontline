@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import {
   Building2,
   User,
@@ -33,7 +33,7 @@ const b2cFeatures = [
 ];
 
 export const PlansSection = () => {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -44,7 +44,7 @@ export const PlansSection = () => {
     },
   };
 
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: { opacity: 0, y: 30, scale: 0.95 },
     visible: {
       opacity: 1,
