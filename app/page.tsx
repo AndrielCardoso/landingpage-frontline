@@ -1,7 +1,7 @@
 import { Header } from "./components/header";
 import { Hero } from "./components/hero";
 import { AboutSection } from "./components/about";
-import { PlansSection } from "./components/plans";
+
 import { Features } from "./components/features";
 import { DemoSection } from "./components/demo";
 import { StandardizationSection } from "./components/standardization";
@@ -60,7 +60,7 @@ export default function Home() {
       <Header />
       <Hero />
       <AboutSection />
-      <PlansSection />
+
       <Features />
       <DemoSection />
       <StandardizationSection />

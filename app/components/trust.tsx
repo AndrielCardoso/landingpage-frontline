@@ -32,23 +32,13 @@ export const TrustSection = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="https://frontline-gestao.web.app/login"
+              href="https://wa.me/5547988141031?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Frontline%20para%20minha%20empresa."
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-[#0066FF] text-white font-semibold hover:bg-[#0052CC] transition-all shadow-[0_0_30px_rgba(0,102,255,0.3)]"
             >
-              Criar minha conta
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-            </a>
-
-            <a
-              href="https://wa.me/5547988141031?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Frontline."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-transparent border border-white/15 text-[#EDEDED] font-semibold hover:bg-white/5 hover:border-white/25 transition-all"
-            >
-              <MessageCircle className="w-4 h-4" />
-              Falar com consultor
+              <MessageCircle className="w-5 h-5" />
+              Falar com um consultor
             </a>
           </div>
         </motion.div>

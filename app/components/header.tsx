@@ -54,12 +54,12 @@ export const Header = () => {
 
           {/* Desktop CTA */}
           <a
-            href="https://frontline-gestao.web.app/login"
+            href="https://wa.me/5547988141031?text=Olá!%20Gostaria%20de%20falar%20com%20um%20consultor%20sobre%20o%20Frontline."
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#0066FF] text-white text-sm font-semibold hover:bg-[#0052CC] transition-colors duration-200"
           >
-            Começar agora
+            Falar com um consultor
           </a>
 
           {/* Mobile Hamburger */}
@@ -94,12 +94,12 @@ export const Header = () => {
                 </a>
               ))}
               <a
-                href="https://frontline-gestao.web.app/login"
+                href="https://wa.me/5547988141031?text=Olá!%20Gostaria%20de%20falar%20com%20um%20consultor%20sobre%20o%20Frontline."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-[#0066FF] text-white text-sm font-semibold hover:bg-[#0052CC] transition-colors mt-2"
               >
-                Começar agora
+                Falar com um consultor
               </a>
             </div>
           </motion.div>

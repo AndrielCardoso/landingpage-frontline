@@ -87,26 +87,15 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 w-full px-4 sm:px-0"
           >
-            {/* B2C CTA - Primary */}
+            {/* CTA - Primary B2B */}
             <a
-              href="https://frontline-gestao.web.app/login"
+              href="https://wa.me/5547988141031?text=Olá!%20Gostaria%20de%20falar%20com%20um%20consultor%20sobre%20o%20Frontline."
               target="_blank"
               rel="noopener noreferrer"
               className="group flex sm:inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#0066FF] text-white font-semibold text-base hover:bg-[#0052CC] transition-all duration-200 shadow-[0_0_30px_rgba(0,102,255,0.3)] hover:shadow-[0_0_40px_rgba(0,102,255,0.45)] w-full sm:w-auto"
             >
-              Criar minha conta
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-            </a>
-
-            {/* B2B CTA - Secondary */}
-            <a
-              href="https://wa.me/5547988141031?text=Olá!%20Tenho%20interesse%20no%20Frontline%20para%20minha%20empresa."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex sm:inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-transparent border border-white/15 text-[#EDEDED] font-semibold text-base hover:bg-white/5 hover:border-white/25 transition-all duration-200 w-full sm:w-auto"
-            >
-              <MessageCircle className="w-4 h-4" />
-              Falar com consultor
+              Falar com um consultor
+              <MessageCircle className="w-5 h-5 ml-1" />
             </a>
           </motion.div>
 
