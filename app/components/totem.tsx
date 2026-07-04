@@ -2,233 +2,163 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { 
-  ScanLine, 
-  FileText, 
-  Calculator, 
-  Calendar, 
-  Baby, 
-  Scale, 
-  ShieldCheck, 
-  TrendingUp, 
-  Clock, 
-  Lock, 
-  Paintbrush, 
-  RotateCcw
-} from "lucide-react";
+import { MessageCircle, Check } from "lucide-react";
 
 const totemFeatures = [
   {
     id: "scan",
     title: "Leitura Instantânea (Bipe e Descubra)",
-    icon: ScanLine,
-    desc: "O cliente aproxima a caixinha do leitor acoplado e o sistema abre diretamente a ficha do medicamento, sem digitar uma única letra."
+    desc: "Aproximou, leu. O cliente não digita nada, o sistema captura o código e abre a ficha instantaneamente."
   },
   {
     id: "bula",
-    title: "Consulta Simplificada",
-    icon: FileText,
-    desc: "Uma ficha descomplicada: Indicação, como tomar (Posologia Inteligente por apresentação) e efeitos colaterais de forma clara."
+    title: "Bula Simplificada",
+    desc: "Informações que o paciente realmente entende: indicação, posologia inteligente e efeitos colaterais."
   },
   {
     id: "pediatrica",
     title: "Calculadora Pediátrica",
-    icon: Calculator,
-    desc: "Ferramenta guiada onde o pai insere o peso ou a idade da criança e obtém a dose exata do xarope, evitando erros comuns."
+    desc: "Dose exata baseada no peso/idade da criança, eliminando dúvidas e aumentando a segurança da família."
   },
   {
     id: "validade",
-    title: "Calculadora de Validade",
-    icon: Calendar,
-    desc: "O cliente preenche a data da receita e descobre na hora se ela ainda é válida para compra de controlados ou antibióticos."
+    title: "Validação de Receitas",
+    desc: "Verificação automática de prazos de validade para receitas de controlados e antibióticos."
   },
   {
     id: "lactacao",
-    title: "Guia de Lactação",
-    icon: Baby,
-    desc: "Mães podem checar se um princípio ativo é seguro, requer cautela ou é contraindicado durante a amamentação."
-  },
-  {
-    id: "legislacao",
-    title: "Regras e Legislação",
-    icon: Scale,
-    desc: "Respostas visuais para dúvidas sobre cores de receitas, Portaria 344 e regras rígidas da ANVISA para educar o cliente."
+    title: "Guia de Lactação & Legislação",
+    desc: "Consulta de segurança para amamentação e respostas visuais sobre regras da ANVISA."
   }
 ];
 
 const techSpecs = [
-  { icon: Lock, title: "Modo Kiosk Blindado", desc: "Bloqueio total do sistema operacional. O cliente não sai do app." },
-  { icon: ScanLine, title: "Integração Nativa", desc: "Leitores físicos USB/Bluetooth identificados instantaneamente." },
-  { icon: RotateCcw, title: "Reset Automático", desc: "Após 30 segundos de inatividade, a tela limpa e volta ao início." },
-  { icon: Paintbrush, title: "White-Label", desc: "O totem carrega as cores e a marca da sua drogaria automaticamente." }
+  "Modo Kiosk Blindado (App em Tela Cheia)",
+  "Integração nativa com leitores de código de barras",
+  "Reset automático após inatividade",
+  "Personalização White-Label com sua marca"
 ];
 
 export const TotemSection = () => {
   const [activeFeature, setActiveFeature] = useState(totemFeatures[0].id);
 
   return (
-    <section className="py-24 md:py-32 relative overflow-hidden" id="totem">
+    <section className="py-24 relative" id="totem">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#262630] to-transparent" />
       
-      {/* Background elements */}
-      <div className="absolute top-40 left-0 w-[500px] h-[500px] bg-[#0066FF]/5 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-40 right-0 w-[600px] h-[600px] bg-[#10B981]/5 rounded-full blur-[120px] pointer-events-none" />
+      {/* Subtle background glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#0066FF]/5 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="container mx-auto px-6 relative z-10">
+        
         {/* Header */}
-        <div className="max-w-4xl mx-auto text-center mb-20">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <span className="px-4 py-1.5 rounded-full bg-[#0066FF]/10 text-[#0066FF] text-xs font-bold uppercase tracking-wider mb-6 inline-block">
-              Novo Lançamento
-            </span>
-            <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-6">
-              Transforme o balcão com o
-              <br />
-              <span className="text-[#0066FF]">Autoatendimento Inteligente</span>
-            </h2>
-            <p className="text-lg text-[#9CA3AF] max-w-2xl mx-auto">
-              Dê autonomia aos seus clientes para consultar bulas simplificadas, calcular doses pediátricas e verificar receitas. Reduza filas e modernize sua farmácia com o Frontline Totem.
-            </p>
-          </motion.div>
+        <div className="text-center mb-16">
+          <span className="text-[#0066FF] text-sm font-semibold uppercase tracking-wider mb-3 inline-block">
+            Autoatendimento Inteligente
+          </span>
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
+            O futuro do seu balcão.
+          </h2>
+          <p className="text-[#9CA3AF] max-w-2xl mx-auto text-lg">
+            Dê autonomia ao seu cliente e libere sua equipe com o Frontline Totem.
+          </p>
         </div>
 
-        {/* Main Content: Split Layout */}
-        <div className="flex flex-col lg:flex-row gap-16 items-center mb-24">
+        <div className="flex flex-col lg:flex-row items-center justify-between max-w-6xl mx-auto gap-12 lg:gap-20">
           
-          {/* Left: Features Accordion */}
-          <div className="w-full lg:w-1/2 flex flex-col gap-4">
-            {totemFeatures.map((feat) => (
+          {/* Left: Tablet Image & Laser */}
+          <div className="w-full lg:w-1/2 relative flex justify-center lg:justify-end">
+            <motion.div 
+              animate={{ y: [-8, 8, -8] }}
+              transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
+              className="relative w-full max-w-[500px]"
+            >
+              <img 
+                src="/ChatGPT Image 3 de jul. de 2026, 23_20_57.png" 
+                alt="Frontline Totem App" 
+                className="w-full h-auto drop-shadow-[0_20px_50px_rgba(0,102,255,0.15)]"
+              />
+
+              {/* Holographic Laser */}
               <motion.div
-                key={feat.id}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                onClick={() => setActiveFeature(feat.id)}
-                className={`cursor-pointer rounded-2xl border transition-all duration-300 overflow-hidden ${
-                  activeFeature === feat.id 
-                    ? "bg-[#141419] border-[#0066FF]/40 shadow-[0_0_30px_rgba(0,102,255,0.1)]" 
-                    : "bg-transparent border-[#262630] hover:border-[#262630]/80 hover:bg-[#141419]/50"
-                }`}
-              >
-                <div className="p-6 flex items-center gap-4">
-                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 transition-colors ${
-                    activeFeature === feat.id ? "bg-[#0066FF] text-white" : "bg-[#262630] text-[#9CA3AF]"
-                  }`}>
-                    <feat.icon className="w-6 h-6" />
-                  </div>
-                  <h3 className={`text-xl font-bold transition-colors ${
+                animate={{ top: ["10%", "85%", "10%"] }}
+                transition={{ repeat: Infinity, duration: 3.5, ease: "linear" }}
+                className="absolute left-[5%] right-[5%] h-0.5 bg-[#0066FF] opacity-80 z-20"
+                style={{ boxShadow: "0 0 15px 3px rgba(0, 102, 255, 0.7)" }}
+              />
+              <motion.div
+                animate={{ top: ["10%", "85%", "10%"] }}
+                transition={{ repeat: Infinity, duration: 3.5, ease: "linear" }}
+                className="absolute left-[5%] right-[5%] h-24 bg-gradient-to-b from-transparent to-[#0066FF]/20 z-10 pointer-events-none transform -translate-y-full"
+              />
+            </motion.div>
+          </div>
+
+          {/* Right: Condensed Content */}
+          <div className="w-full lg:w-1/2">
+            
+            {/* Minimalist Interactive List */}
+            <div className="flex flex-col gap-2 mb-12">
+              {totemFeatures.map((feat) => (
+                <div 
+                  key={feat.id}
+                  onClick={() => setActiveFeature(feat.id)}
+                  className={`cursor-pointer border-l-2 pl-5 py-3 transition-all duration-300 ${
+                    activeFeature === feat.id 
+                      ? "border-[#0066FF]" 
+                      : "border-[#262630] hover:border-[#4A4A5A]"
+                  }`}
+                >
+                  <h3 className={`text-lg font-semibold transition-colors ${
                     activeFeature === feat.id ? "text-white" : "text-[#9CA3AF]"
                   }`}>
                     {feat.title}
                   </h3>
+                  <AnimatePresence>
+                    {activeFeature === feat.id && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        className="overflow-hidden"
+                      >
+                        <p className="text-[#9CA3AF] text-sm mt-2 leading-relaxed pr-4">
+                          {feat.desc}
+                        </p>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
-                
-                <AnimatePresence>
-                  {activeFeature === feat.id && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      className="px-6 pb-6 pt-0"
-                    >
-                      <p className="text-[#9CA3AF] leading-relaxed ml-16">
-                        {feat.desc}
-                      </p>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
-            ))}
-          </div>
+              ))}
+            </div>
 
-          {/* Right: The Holographic Tablet */}
-          <div className="w-full lg:w-1/2 flex justify-center items-center">
-            <motion.div 
-              animate={{ y: [-10, 10, -10] }}
-              transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
-              className="relative w-full max-w-md aspect-[3/4] sm:aspect-auto sm:h-[600px] bg-white rounded-[2.5rem] shadow-[0_0_80px_rgba(255,255,255,0.15)] border-8 border-[#141419] overflow-hidden flex items-center justify-center p-4"
-            >
-              {/* Image */}
-              <img 
-                src="/ChatGPT Image 3 de jul. de 2026, 23_20_57.png" 
-                alt="Frontline Totem Interface" 
-                className="w-full h-full object-contain rounded-xl"
-              />
+            {/* Tech Specs & CTA */}
+            <div className="bg-[#141419] border border-[#262630] rounded-2xl p-6 md:p-8">
+              <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wide">
+                Tecnologia & Segurança
+              </h4>
+              <ul className="space-y-3 mb-8">
+                {techSpecs.map((spec, i) => (
+                  <li key={i} className="flex items-start gap-3 text-sm text-[#9CA3AF]">
+                    <Check className="w-4 h-4 text-[#10B981] shrink-0 mt-0.5" />
+                    {spec}
+                  </li>
+                ))}
+              </ul>
 
-              {/* Holographic Scanner Laser Overlay */}
-              <motion.div
-                animate={{ top: ["0%", "95%", "0%"] }}
-                transition={{ repeat: Infinity, duration: 3, ease: "linear" }}
-                className="absolute left-0 right-0 h-1 bg-[#0066FF] z-20 opacity-70"
-                style={{ boxShadow: "0 0 20px 5px rgba(0, 102, 255, 0.6)" }}
-              />
-              
-              {/* Scanning Glow Overlay */}
-              <motion.div
-                animate={{ top: ["0%", "95%", "0%"] }}
-                transition={{ repeat: Infinity, duration: 3, ease: "linear" }}
-                className="absolute left-0 right-0 h-32 bg-gradient-to-b from-transparent via-[#0066FF]/20 to-transparent z-10 -mt-16 pointer-events-none"
-              />
-            </motion.div>
+              <a
+                href="https://wa.me/5547988141031?text=Olá!%20Gostaria%20de%20implantar%20o%20Totem%20na%20minha%20farmácia."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#0066FF] text-white font-semibold text-sm hover:bg-[#0052CC] transition-all"
+              >
+                <MessageCircle className="w-4 h-4" />
+                Falar com consultor
+              </a>
+            </div>
+
           </div>
         </div>
-
-        {/* Tech Specs & Arguments */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {techSpecs.map((spec, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="p-6 rounded-2xl bg-[#141419] border border-[#262630]"
-            >
-              <spec.icon className="w-8 h-8 text-[#0066FF] mb-4" />
-              <h4 className="text-white font-bold mb-2">{spec.title}</h4>
-              <p className="text-sm text-[#9CA3AF] leading-relaxed">{spec.desc}</p>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* Sales Arguments CTA */}
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          className="bg-gradient-to-r from-[#0066FF]/10 to-[#10B981]/10 border border-[#0066FF]/20 rounded-3xl p-8 md:p-12 text-center"
-        >
-          <div className="flex flex-wrap justify-center gap-8 mb-8">
-            <div className="flex items-center gap-2">
-              <TrendingUp className="w-5 h-5 text-[#10B981]" />
-              <span className="text-[#EDEDED] font-semibold">Aumento de Ticket Médio</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Clock className="w-5 h-5 text-[#0066FF]" />
-              <span className="text-[#EDEDED] font-semibold">Otimização da Equipe</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <ShieldCheck className="w-5 h-5 text-[#10B981]" />
-              <span className="text-[#EDEDED] font-semibold">Prevenção de Erros</span>
-            </div>
-          </div>
-          
-          <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
-            Eleve a experiência da sua farmácia com a tecnologia interativa.
-          </h3>
-          <a
-            href="https://wa.me/5547988141031?text=Olá!%20Tenho%20interesse%20em%20implantar%20o%20Frontline%20Totem%20na%20minha%20farmácia."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#0066FF] text-white font-bold text-base hover:bg-[#0052CC] transition-all shadow-[0_0_30px_rgba(0,102,255,0.3)] w-full sm:w-auto"
-          >
-            Falar com um consultor
-          </a>
-        </motion.div>
       </div>
     </section>
   );
