@@ -5,6 +5,7 @@ import { AboutSection } from "./components/about";
 import { Features } from "./components/features";
 import { TotemSection } from "./components/totem";
 import { WhatsappSection } from "./components/whatsapp";
+import { RecordsSection } from "./components/records";
 import { DemoSection } from "./components/demo";
 import { StandardizationSection } from "./components/standardization";
 import { PricingSection } from "./components/pricing";
@@ -66,6 +67,7 @@ export default function Home() {
       <Features />
       <TotemSection />
       <WhatsappSection />
+      <RecordsSection />
       <DemoSection />
       <StandardizationSection />
       <PricingSection />
