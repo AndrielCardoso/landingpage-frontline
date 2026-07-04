@@ -4,12 +4,12 @@
 
   
   /* Dark Premium Palette */
-  --color-background: #0A0A0F;
-  --color-surface: #141419;
-  --color-surface-elevated: #1C1C24;
-  --color-foreground: #EDEDED;
-  --color-muted: #9CA3AF;
-  --color-border: #262630;
+  --color-background: #FAFAFA;
+  --color-surface: #FFFFFF;
+  --color-surface-elevated: #F4F4F5;
+  --color-foreground: #111827;
+  --color-muted: #4B5563;
+  --color-border: #E5E7EB;
   
   /* Brand Colors */
   --color-primary: #0066FF;
