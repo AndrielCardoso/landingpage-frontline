@@ -35,7 +35,7 @@ export const TrustSection = () => {
               href="https://wa.me/5547988141031?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Frontline%20para%20minha%20empresa."
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-[#0066FF] text-white font-semibold hover:bg-[#0052CC] transition-all shadow-[0_0_30px_rgba(0,102,255,0.3)]"
+              className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-[#0066FF] text-[#111827] font-semibold hover:bg-[#0052CC] transition-all shadow-[0_0_30px_rgba(0,102,255,0.3)]"
             >
               <MessageCircle className="w-5 h-5" />
               Falar com um consultor

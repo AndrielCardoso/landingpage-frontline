@@ -110,7 +110,7 @@ export const TotemSection = () => {
                   }`}
                 >
                   <h3 className={`text-lg font-semibold transition-colors ${
-                    activeFeature === feat.id ? "text-white" : "text-[#9CA3AF]"
+                    activeFeature === feat.id ? "text-[#111827]" : "text-[#9CA3AF]"
                   }`}>
                     {feat.title}
                   </h3>
@@ -134,7 +134,7 @@ export const TotemSection = () => {
 
             {/* Tech Specs & CTA */}
             <div className="bg-[#141419] border border-[#262630] rounded-2xl p-6 md:p-8">
-              <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wide">
+              <h4 className="text-[#111827] font-semibold mb-4 text-sm uppercase tracking-wide">
                 Tecnologia & Segurança
               </h4>
               <ul className="space-y-3 mb-8">
@@ -150,7 +150,7 @@ export const TotemSection = () => {
                 href="https://wa.me/5547988141031?text=Olá!%20Gostaria%20de%20implantar%20o%20Totem%20na%20minha%20farmácia."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#0066FF] text-white font-semibold text-sm hover:bg-[#0052CC] transition-all"
+                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#0066FF] text-[#111827] font-semibold text-sm hover:bg-[#0052CC] transition-all"
               >
                 <MessageCircle className="w-4 h-4" />
                 Falar com consultor

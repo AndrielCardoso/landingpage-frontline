@@ -45,7 +45,7 @@ export const Header = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-[#9CA3AF] hover:text-white transition-colors duration-200"
+                className="text-sm font-medium text-[#9CA3AF] hover:text-[#111827] transition-colors duration-200"
               >
                 {link.label}
               </a>
@@ -57,7 +57,7 @@ export const Header = () => {
             href="https://wa.me/5547988141031?text=Olá!%20Gostaria%20de%20falar%20com%20um%20consultor%20sobre%20o%20Frontline."
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#0066FF] text-white text-sm font-semibold hover:bg-[#0052CC] transition-colors duration-200"
+            className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#0066FF] text-[#111827] text-sm font-semibold hover:bg-[#0052CC] transition-colors duration-200"
           >
             Falar com um consultor
           </a>
@@ -65,7 +65,7 @@ export const Header = () => {
           {/* Mobile Hamburger */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden p-2 text-[#9CA3AF] hover:text-white transition-colors"
+            className="md:hidden p-2 text-[#9CA3AF] hover:text-[#111827] transition-colors"
             aria-label="Menu"
           >
             {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -88,7 +88,7 @@ export const Header = () => {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="text-base font-medium text-[#9CA3AF] hover:text-white transition-colors py-2"
+                  className="text-base font-medium text-[#9CA3AF] hover:text-[#111827] transition-colors py-2"
                 >
                   {link.label}
                 </a>
@@ -97,7 +97,7 @@ export const Header = () => {
                 href="https://wa.me/5547988141031?text=Olá!%20Gostaria%20de%20falar%20com%20um%20consultor%20sobre%20o%20Frontline."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-[#0066FF] text-white text-sm font-semibold hover:bg-[#0052CC] transition-colors mt-2"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-[#0066FF] text-[#111827] text-sm font-semibold hover:bg-[#0052CC] transition-colors mt-2"
               >
                 Falar com um consultor
               </a>

@@ -65,7 +65,7 @@ export const PricingSection = () => {
                   <benefit.icon className="w-5 h-5 text-[#0066FF]" />
                 </div>
                 <div>
-                  <h3 className="text-white font-semibold mb-1">{benefit.title}</h3>
+                  <h3 className="text-[#111827] font-semibold mb-1">{benefit.title}</h3>
                   <p className="text-[#9CA3AF] text-sm leading-relaxed">{benefit.desc}</p>
                 </div>
               </motion.div>
@@ -80,14 +80,14 @@ export const PricingSection = () => {
             className="flex flex-col sm:flex-row items-center justify-center p-6 rounded-2xl bg-gradient-to-r from-[#0066FF]/10 to-transparent border border-[#0066FF]/20"
           >
             <div className="flex-1 text-center sm:text-left mb-6 sm:mb-0">
-              <h4 className="text-lg font-bold text-white mb-1">Quer levar o Frontline para sua equipe?</h4>
+              <h4 className="text-lg font-bold text-[#111827] mb-1">Quer levar o Frontline para sua equipe?</h4>
               <p className="text-sm text-[#9CA3AF]">Fale com nosso time e descubra como podemos ajudar.</p>
             </div>
             <a
               href="https://wa.me/5547988141031?text=Olá!%20Gostaria%20de%20falar%20com%20um%20consultor%20sobre%20como%20o%20Frontline%20pode%20ajudar%20minha%20equipe."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#0066FF] text-white font-semibold text-sm hover:bg-[#0052CC] transition-all w-full sm:w-auto shrink-0 shadow-[0_0_20px_rgba(0,102,255,0.2)]"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#0066FF] text-[#111827] font-semibold text-sm hover:bg-[#0052CC] transition-all w-full sm:w-auto shrink-0 shadow-[0_0_20px_rgba(0,102,255,0.2)]"
             >
               <MessageCircle className="w-4 h-4" />
               Falar com um consultor

@@ -70,7 +70,7 @@ export const RecordsSection = () => {
               <div className="w-10 h-10 rounded-full bg-red-500/10 flex items-center justify-center">
                 <XCircle className="w-5 h-5 text-red-400" />
               </div>
-              <h3 className="text-xl font-bold text-white">Salas de Serviços Comuns</h3>
+              <h3 className="text-xl font-bold text-[#111827]">Salas de Serviços Comuns</h3>
             </div>
             <ul className="space-y-4">
               {[
@@ -100,7 +100,7 @@ export const RecordsSection = () => {
               <div className="w-10 h-10 rounded-full bg-[#0066FF]/20 flex items-center justify-center border border-[#0066FF]/30">
                 <CheckCircle2 className="w-5 h-5 text-[#0066FF]" />
               </div>
-              <h3 className="text-xl font-bold text-white">Com Frontline Prontuário</h3>
+              <h3 className="text-xl font-bold text-[#111827]">Com Frontline Prontuário</h3>
             </div>
             <ul className="space-y-4 relative z-10">
               {[
@@ -127,7 +127,7 @@ export const RecordsSection = () => {
                 onClick={() => setActiveTab(feat.id)}
                 className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all ${
                   activeTab === feat.id
-                    ? "bg-[#0066FF] text-white shadow-[0_0_20px_rgba(0,102,255,0.4)]"
+                    ? "bg-[#0066FF] text-[#111827] shadow-[0_0_20px_rgba(0,102,255,0.4)]"
                     : "bg-[#141419] text-[#9CA3AF] border border-[#262630] hover:bg-[#1A1A24]"
                 }`}
               >
@@ -165,7 +165,7 @@ export const RecordsSection = () => {
             href="https://wa.me/5547988141031?text=Olá!%20Gostaria%20de%20agendar%20uma%20demonstração%20do%20Prontuário%20Eletrônico%20Frontline."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-white text-black font-bold text-base hover:scale-105 transition-all"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#111827] text-white font-bold text-base hover:scale-105 transition-all"
           >
             Agendar uma demonstração clínica
             <ChevronRight className="w-5 h-5" />

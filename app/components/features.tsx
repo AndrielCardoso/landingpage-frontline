@@ -113,7 +113,7 @@ export const Features = () => {
                   </span>
                 )}
               </div>
-              <h3 className="text-lg font-bold text-white mb-2 tracking-tight">
+              <h3 className="text-lg font-bold text-[#111827] mb-2 tracking-tight">
                 {f.title}
               </h3>
               <p className="text-sm text-[#9CA3AF] leading-relaxed">
@@ -142,7 +142,7 @@ export const Features = () => {
               <motion.div
                 key={i}
                 variants={{ hidden: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1, transition: { type: "spring" } } }}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/5 text-sm text-[#9CA3AF] hover:text-white hover:border-white/15 transition-all"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black/5 border border-white/5 text-sm text-[#9CA3AF] hover:text-[#111827] hover:border-white/15 transition-all"
               >
                 <f.icon className="w-3.5 h-3.5" />
                 {f.label}

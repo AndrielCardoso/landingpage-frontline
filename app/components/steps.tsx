@@ -80,7 +80,7 @@ export const StepsSection = () => {
 
               {/* Content */}
               <div className="pb-10 sm:pb-12">
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 tracking-tight">
+                <h3 className="text-lg sm:text-xl font-bold text-[#111827] mb-2 tracking-tight">
                   {step.title}
                 </h3>
                 <p className="text-[#9CA3AF] text-sm leading-relaxed">

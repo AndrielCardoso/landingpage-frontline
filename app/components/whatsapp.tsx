@@ -133,7 +133,7 @@ export const WhatsappSection = () => {
                 )}
                 
                 <h3 className={`text-xl font-bold mb-2 transition-colors ${
-                  activeFeature === feat.id ? "text-white" : "text-[#9CA3AF]"
+                  activeFeature === feat.id ? "text-[#111827]" : "text-[#9CA3AF]"
                 }`}>
                   {feat.title}
                 </h3>
@@ -163,7 +163,7 @@ export const WhatsappSection = () => {
             <div className="flex-1 space-y-4">
               <div className="flex items-center gap-3">
                 <ShieldCheck className="w-6 h-6 text-[#10B981]" />
-                <h4 className="text-xl font-bold text-white">Engenharia Clínica Segura</h4>
+                <h4 className="text-xl font-bold text-[#111827]">Engenharia Clínica Segura</h4>
               </div>
               <p className="text-[#9CA3AF] text-sm leading-relaxed max-w-xl">
                 O Frontline IA possui um classificador inteligente em 2 etapas, bloqueio estrito contra alucinações médicas (Zero Fake Info) e filtro nativo que impede prescrições autônomas, mantendo 100% do compliance legal da sua drogaria.
@@ -175,7 +175,7 @@ export const WhatsappSection = () => {
                 href="https://wa.me/5547988141031?text=Olá!%20Gostaria%20de%20integrar%20o%20Frontline%20IA%20no%20WhatsApp%20da%20minha%20farmácia."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-white text-black font-bold text-base hover:scale-105 transition-all overflow-hidden"
+                className="group relative inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#111827] text-white font-bold text-base hover:scale-105 transition-all overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-[#10B981]/20 to-[#0066FF]/20 opacity-0 group-hover:opacity-100 transition-opacity" />
                 <MessageSquare className="w-5 h-5 relative z-10" />

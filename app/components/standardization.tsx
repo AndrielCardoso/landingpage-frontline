@@ -76,7 +76,7 @@ export const StandardizationSection = () => {
                 <div className="w-10 h-10 rounded-xl bg-[#0066FF]/10 flex items-center justify-center text-[#0066FF] mb-5 group-hover:scale-110 transition-transform">
                   <item.icon className="w-5 h-5" />
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2 tracking-tight">
+                <h3 className="text-lg font-bold text-[#111827] mb-2 tracking-tight">
                   {item.title}
                 </h3>
                 <p className="text-sm text-[#9CA3AF] leading-relaxed">
@@ -94,7 +94,7 @@ export const StandardizationSection = () => {
             transition={{ duration: 0.5 }}
             className="text-center"
           >
-            <h3 className="text-xl md:text-2xl font-bold text-white mb-3 tracking-tight">
+            <h3 className="text-xl md:text-2xl font-bold text-[#111827] mb-3 tracking-tight">
               Referências médicas e farmacêuticas mundiais.
             </h3>
             <p className="text-sm text-[#9CA3AF] max-w-xl mx-auto mb-10">

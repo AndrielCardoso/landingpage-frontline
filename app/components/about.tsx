@@ -53,7 +53,7 @@ export const AboutSection = () => {
             {/* Right - Description */}
             <div className="space-y-6">
               <p className="text-[#9CA3AF] text-lg leading-relaxed">
-                O <span className="text-white font-medium">Frontline Help</span> é
+                O <span className="text-[#111827] font-medium">Frontline Help</span> é
                 uma plataforma de suporte à decisão clínica projetada
                 especificamente para o dia a dia da farmácia. Não é um sistema
                 genérico adaptado, foi construído por quem vive o balcão.
@@ -65,21 +65,21 @@ export const AboutSection = () => {
               </p>
               <div className="flex items-center gap-8 pt-4">
                 <div>
-                  <p className="text-3xl font-black text-white">
+                  <p className="text-3xl font-black text-[#111827]">
                     <AnimatedNumber value={98} suffix="%" />
                   </p>
                   <p className="text-sm text-[#9CA3AF]">Precisão clínica</p>
                 </div>
                 <div className="w-px h-12 bg-[#262630]" />
                 <div>
-                  <p className="text-3xl font-black text-white">
+                  <p className="text-3xl font-black text-[#111827]">
                     <AnimatedNumber value={2} suffix="x" />
                   </p>
                   <p className="text-sm text-[#9CA3AF]">Mais agilidade</p>
                 </div>
                 <div className="w-px h-12 bg-[#262630]" />
                 <div>
-                  <p className="text-3xl font-black text-white">
+                  <p className="text-3xl font-black text-[#111827]">
                     <AnimatedNumber value={100} suffix="%" />
                   </p>
 

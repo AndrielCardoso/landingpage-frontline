@@ -64,8 +64,8 @@ export const DemoSection = () => {
                   onClick={() => setActiveTab(tab.id)}
                   className={`flex items-center gap-3 px-4 py-3.5 rounded-xl text-left transition-all whitespace-nowrap md:whitespace-normal ${
                     activeTab === tab.id
-                      ? "bg-[#0066FF]/10 border border-[#0066FF]/20 text-white shadow-inner"
-                      : "border border-transparent text-[#9CA3AF] hover:bg-white/5 hover:text-[#EDEDED]"
+                      ? "bg-[#0066FF]/10 border border-[#0066FF]/20 text-[#111827] shadow-inner"
+                      : "border border-transparent text-[#9CA3AF] hover:bg-black/5 hover:text-[#EDEDED]"
                   }`}
                 >
                   <tab.icon className={`w-5 h-5 shrink-0 ${activeTab === tab.id ? "text-[#0066FF]" : ""}`} />
@@ -114,7 +114,7 @@ const ConsultaMock = () => (
     {/* Header */}
     <div className="bg-[#141419] p-6 rounded-xl border border-[#262630]">
       <div className="mb-4">
-        <h3 className="text-3xl font-black text-white uppercase tracking-tight mb-1">Dipirona</h3>
+        <h3 className="text-3xl font-black text-[#111827] uppercase tracking-tight mb-1">Dipirona</h3>
         <p className="text-xs text-[#9CA3AF] uppercase font-bold tracking-wider">DIPIRONA</p>
       </div>
       <div className="flex flex-wrap gap-2">
@@ -136,8 +136,8 @@ const ConsultaMock = () => (
         { title: "Meia-vida", desc: "Início de ação oral ocorre em 30 a 60 minutos. A duração é de aprox. 4 horas.", icon: Calculator },
       ].map((item, i) => (
         <div key={i} className="bg-[#141419] p-5 rounded-xl border border-[#262630] hover:border-[#0066FF]/30 transition-colors">
-          <h4 className="font-bold text-white mb-2 flex items-center gap-2">
-            <div className="p-1.5 rounded-md bg-white/5">
+          <h4 className="font-bold text-[#111827] mb-2 flex items-center gap-2">
+            <div className="p-1.5 rounded-md bg-black/5">
               <item.icon className="w-3.5 h-3.5 text-[#0066FF]" />
             </div>
             {item.title}
@@ -160,7 +160,7 @@ const ComparacaoMock = () => (
     <div className="flex bg-[#141419] rounded-xl border border-[#262630] overflow-hidden flex-col sm:flex-row">
        {/* Dipirona Side */}
        <div className="flex-1 p-6 border-b sm:border-b-0 sm:border-r border-[#262630]">
-         <h3 className="text-xl font-black text-white mb-6 uppercase tracking-tight">Dipirona</h3>
+         <h3 className="text-xl font-black text-[#111827] mb-6 uppercase tracking-tight">Dipirona</h3>
          <div className="space-y-6">
             <div>
                <p className="text-[10px] font-bold text-[#10B981] uppercase tracking-wider mb-2 flex items-center gap-1.5">
@@ -178,7 +178,7 @@ const ComparacaoMock = () => (
        </div>
        {/* Paracetamol Side */}
        <div className="flex-1 p-6">
-         <h3 className="text-xl font-black text-white mb-6 uppercase tracking-tight">Paracetamol</h3>
+         <h3 className="text-xl font-black text-[#111827] mb-6 uppercase tracking-tight">Paracetamol</h3>
          <div className="space-y-6">
             <div>
                <p className="text-[10px] font-bold text-[#10B981] uppercase tracking-wider mb-2 flex items-center gap-1.5">
@@ -213,12 +213,12 @@ const InteracoesMock = () => (
         <span className="px-2.5 py-1 bg-[#EF4444]/10 border border-[#EF4444]/20 text-[#EF4444] rounded uppercase text-[10px] font-bold tracking-wider flex items-center gap-1.5">
           <ShieldAlert className="w-3 h-3" /> Alto Risco
         </span>
-        <span className="px-2.5 py-1 bg-white/5 border border-white/10 text-[#9CA3AF] rounded uppercase text-[10px] font-bold tracking-wider">
+        <span className="px-2.5 py-1 bg-black/5 border border-black/10 text-[#9CA3AF] rounded uppercase text-[10px] font-bold tracking-wider">
           Score 94
         </span>
       </div>
 
-      <h3 className="text-2xl font-bold text-white mb-2 tracking-tight">Ácido Acetilsalicílico + Varfarina</h3>
+      <h3 className="text-2xl font-bold text-[#111827] mb-2 tracking-tight">Ácido Acetilsalicílico + Varfarina</h3>
       <p className="text-[#EF4444] font-medium text-sm mb-6">Aumento crítico de risco de sangramento</p>
 
       <p className="text-sm text-[#9CA3AF] leading-relaxed mb-8">
@@ -250,7 +250,7 @@ const CalculadoraMock = () => (
         <div className="w-10 h-10 rounded-lg bg-[#0066FF]/10 flex items-center justify-center">
           <Calculator className="w-5 h-5 text-[#0066FF]" />
         </div>
-        <h3 className="text-xl font-bold text-white tracking-tight">Calculadora Pediátrica</h3>
+        <h3 className="text-xl font-bold text-[#111827] tracking-tight">Calculadora Pediátrica</h3>
       </div>
       
       <div className="space-y-5 mb-8">
@@ -264,7 +264,7 @@ const CalculadoraMock = () => (
         <div className="grid grid-cols-2 gap-4">
           <div>
             <label className="text-[10px] text-[#9CA3AF] uppercase tracking-wider font-bold mb-2 block">Peso (kg)</label>
-            <div className="w-full bg-[#0066FF]/5 border border-[#0066FF]/30 rounded-lg p-3.5 text-white text-sm font-medium ring-1 ring-[#0066FF]/20 shadow-[0_0_15px_rgba(0,102,255,0.1)]">
+            <div className="w-full bg-[#0066FF]/5 border border-[#0066FF]/30 rounded-lg p-3.5 text-[#111827] text-sm font-medium ring-1 ring-[#0066FF]/20 shadow-[0_0_15px_rgba(0,102,255,0.1)]">
               15 kg
               <span className="animate-pulse ml-1 inline-block w-0.5 h-3.5 bg-[#0066FF] align-middle" />
             </div>
@@ -281,7 +281,7 @@ const CalculadoraMock = () => (
       <div className="bg-gradient-to-br from-[#0066FF]/10 to-transparent border border-[#0066FF]/20 rounded-xl p-6 text-center relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#0066FF] to-transparent opacity-50" />
         <p className="text-[#0066FF] text-[10px] font-bold uppercase tracking-widest mb-3">Dose Exata Calculada</p>
-        <p className="text-5xl font-black text-white mb-2">6 a 10 gotas</p>
+        <p className="text-5xl font-black text-[#111827] mb-2">6 a 10 gotas</p>
         <p className="text-[#9CA3AF] text-sm">A cada 6 horas (Máx. 4x ao dia)</p>
       </div>
     </div>
@@ -299,11 +299,11 @@ const LactacaoMock = () => (
     <div className="w-full rounded-xl overflow-hidden border border-[#262630]">
       {/* Top Banner */}
       <div className="bg-[#F97316] p-6 flex flex-col items-center justify-center text-center">
-        <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-3">
+        <div className="w-12 h-12 bg-black/20 rounded-full flex items-center justify-center mb-3">
           <div className="w-4 h-1 bg-white rounded-full" />
         </div>
-        <h3 className="text-xl font-black text-white uppercase tracking-tight">Não Recomendado</h3>
-        <p className="text-white/80 text-[10px] uppercase font-bold tracking-widest mt-1">Nível de Segurança</p>
+        <h3 className="text-xl font-black text-[#111827] uppercase tracking-tight">Não Recomendado</h3>
+        <p className="text-[#111827]/80 text-[10px] uppercase font-bold tracking-widest mt-1">Nível de Segurança</p>
       </div>
       {/* Bottom Content */}
       <div className="bg-[#141419] p-6">
@@ -312,8 +312,8 @@ const LactacaoMock = () => (
              <div className="w-4 h-1 bg-[#F97316] rounded-full" />
           </div>
           <div>
-            <span className="px-2 py-0.5 bg-[#F97316] text-white rounded text-[10px] font-bold uppercase tracking-wider">Não Recomendado</span>
-            <h4 className="text-white font-bold text-lg mt-1">Dipirona / Metamizol</h4>
+            <span className="px-2 py-0.5 bg-[#F97316] text-[#111827] rounded text-[10px] font-bold uppercase tracking-wider">Não Recomendado</span>
+            <h4 className="text-[#111827] font-bold text-lg mt-1">Dipirona / Metamizol</h4>
             <p className="text-[#9CA3AF] text-xs">Pesquisado: DIPIRONA</p>
           </div>
         </div>
@@ -347,7 +347,7 @@ const LegislacaoMock = () => (
     <div className="bg-[#141419] p-6 sm:p-8 rounded-xl border border-[#262630]">
        <div className="flex justify-between items-start mb-6">
          <div>
-            <h3 className="text-lg font-bold text-white leading-tight mb-2">Posso aceitar uma prescrição escrita com caneta vermelha?</h3>
+            <h3 className="text-lg font-bold text-[#111827] leading-tight mb-2">Posso aceitar uma prescrição escrita com caneta vermelha?</h3>
             <p className="text-[#9CA3AF] text-xs flex items-center gap-1.5"><Bookmark className="w-3 h-3" /> Portaria 344/98</p>
          </div>
        </div>
@@ -375,7 +375,7 @@ const DispensacaoMock = () => (
       {/* Header */}
       <div className="bg-[#0A0A0F] p-4 border-b border-[#262630] flex justify-between items-center">
         <p className="text-xs text-[#0066FF] font-bold uppercase tracking-wider">Progresso da Conferência</p>
-        <p className="text-xs text-white font-bold bg-[#262630] px-2 py-1 rounded">3 de 9</p>
+        <p className="text-xs text-[#111827] font-bold bg-[#262630] px-2 py-1 rounded">3 de 9</p>
       </div>
       <div className="h-0.5 w-full bg-[#262630]">
         <div className="h-full bg-[#0066FF] w-[33%] shadow-[0_0_10px_rgba(0,102,255,0.5)]" />
@@ -419,7 +419,7 @@ const DicionarioMock = () => (
     <div className="bg-[#141419] p-6 rounded-xl border border-[#262630] flex flex-col h-full">
        <div className="mb-6 flex justify-between items-end">
          <div>
-           <h3 className="text-xl font-bold text-white mb-1">Dicionário</h3>
+           <h3 className="text-xl font-bold text-[#111827] mb-1">Dicionário</h3>
            <p className="text-xs text-[#9CA3AF]">Termos farmacêuticos e químicos</p>
          </div>
          <span className="text-xs text-[#0066FF] font-bold">227 termos</span>
@@ -434,7 +434,7 @@ const DicionarioMock = () => (
          {/* Sidebar Letters */}
          <div className="w-8 shrink-0 flex flex-col gap-2">
            {['A','B','C','D','E'].map((letter, i) => (
-             <div key={i} className={`w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold cursor-pointer ${letter === 'A' ? 'bg-[#0066FF] text-white shadow-[0_0_10px_rgba(0,102,255,0.3)]' : 'text-[#9CA3AF] hover:bg-white/5'}`}>
+             <div key={i} className={`w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold cursor-pointer ${letter === 'A' ? 'bg-[#0066FF] text-[#111827] shadow-[0_0_10px_rgba(0,102,255,0.3)]' : 'text-[#9CA3AF] hover:bg-black/5'}`}>
                {letter}
              </div>
            ))}
@@ -448,7 +448,7 @@ const DicionarioMock = () => (
              { title: "Apneia", desc: "Interrupção temporária da respiração ou ausência de movimentos respiratórios por determinado período." }
            ].map((item, i) => (
              <div key={i} className="bg-[#0A0A0F] border border-[#262630] rounded-lg p-4 hover:border-[#0066FF]/30 transition-colors">
-                <h4 className="text-sm font-bold text-white mb-2 flex items-center justify-between">
+                <h4 className="text-sm font-bold text-[#111827] mb-2 flex items-center justify-between">
                   <span className="flex items-center gap-2">
                     <BookA className="w-3.5 h-3.5 text-[#0066FF]" />
                     {item.title}
