@@ -74,7 +74,7 @@ export const TotemSection = () => {
               className="relative w-full max-w-[500px]"
             >
               <img 
-                src="/totem-transparent.png" 
+                src="/Frontline_Totem (2).png" 
                 alt="Frontline Totem App" 
                 className="w-full h-auto drop-shadow-[0_20px_50px_rgba(0,102,255,0.15)]"
               />
