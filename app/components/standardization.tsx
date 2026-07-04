@@ -8,7 +8,7 @@ export const StandardizationSection = () => {
   return (
     <section className="py-24 md:py-32 relative">
       {/* Separator */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#262630] to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#E5E7EB] to-transparent" />
 
       {/* Background glow */}
       <div className="absolute inset-0 pointer-events-none">
@@ -31,7 +31,7 @@ export const StandardizationSection = () => {
               <br />
               <span className="text-[#0066FF]">padronize o atendimento.</span>
             </h2>
-            <p className="text-lg text-[#9CA3AF] max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-[#4B5563] max-w-2xl mx-auto leading-relaxed">
               O Frontline padroniza o atendimento dos colaboradores de forma
               técnica e precisa, garantindo que cada consulta siga protocolos
               científicos rigorosos.
@@ -71,7 +71,7 @@ export const StandardizationSection = () => {
                   hidden: { opacity: 0, y: 30, scale: 0.95 },
                   visible: { opacity: 1, y: 0, scale: 1, transition: { type: "spring", stiffness: 100, damping: 20 } }
                 }}
-                className="p-7 rounded-2xl bg-[#141419] border border-[#262630] hover:border-[#0066FF]/20 transition-all duration-300 group"
+                className="p-7 rounded-2xl bg-white border border-[#E5E7EB] hover:border-[#0066FF]/20 transition-all duration-300 group"
               >
                 <div className="w-10 h-10 rounded-xl bg-[#0066FF]/10 flex items-center justify-center text-[#0066FF] mb-5 group-hover:scale-110 transition-transform">
                   <item.icon className="w-5 h-5" />
@@ -79,7 +79,7 @@ export const StandardizationSection = () => {
                 <h3 className="text-lg font-bold text-[#111827] mb-2 tracking-tight">
                   {item.title}
                 </h3>
-                <p className="text-sm text-[#9CA3AF] leading-relaxed">
+                <p className="text-sm text-[#4B5563] leading-relaxed">
                   {item.desc}
                 </p>
               </motion.div>
@@ -97,7 +97,7 @@ export const StandardizationSection = () => {
             <h3 className="text-xl md:text-2xl font-bold text-[#111827] mb-3 tracking-tight">
               Referências médicas e farmacêuticas mundiais.
             </h3>
-            <p className="text-sm text-[#9CA3AF] max-w-xl mx-auto mb-10">
+            <p className="text-sm text-[#4B5563] max-w-xl mx-auto mb-10">
               Toda a inteligência do Frontline é alimentada pelos protocolos
               mais respeitados da medicina global.
             </p>

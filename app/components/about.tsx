@@ -45,20 +45,20 @@ export const AboutSection = () => {
               <h2 className="text-3xl md:text-5xl font-bold tracking-tight leading-[1.1] mb-6">
                 Tecnologia clínica
                 <br />
-                <span className="text-[#9CA3AF]">que entende o balcão.</span>
+                <span className="text-[#4B5563]">que entende o balcão.</span>
               </h2>
               <div className="w-16 h-1 bg-[#0066FF] rounded-full" />
             </div>
 
             {/* Right - Description */}
             <div className="space-y-6">
-              <p className="text-[#9CA3AF] text-lg leading-relaxed">
+              <p className="text-[#4B5563] text-lg leading-relaxed">
                 O <span className="text-[#111827] font-medium">Frontline Help</span> é
                 uma plataforma de suporte à decisão clínica projetada
                 especificamente para o dia a dia da farmácia. Não é um sistema
                 genérico adaptado, foi construído por quem vive o balcão.
               </p>
-              <p className="text-[#9CA3AF] text-lg leading-relaxed">
+              <p className="text-[#4B5563] text-lg leading-relaxed">
                 Com fluxogramas inteligentes, prontuário digital e cálculos
                 automatizados, o Frontline elimina o achismo e transforma cada
                 atendimento em uma experiência segura e padronizada.
@@ -68,14 +68,14 @@ export const AboutSection = () => {
                   <p className="text-3xl font-black text-[#111827]">
                     <AnimatedNumber value={98} suffix="%" />
                   </p>
-                  <p className="text-sm text-[#9CA3AF]">Precisão clínica</p>
+                  <p className="text-sm text-[#4B5563]">Precisão clínica</p>
                 </div>
                 <div className="w-px h-12 bg-[#262630]" />
                 <div>
                   <p className="text-3xl font-black text-[#111827]">
                     <AnimatedNumber value={2} suffix="x" />
                   </p>
-                  <p className="text-sm text-[#9CA3AF]">Mais agilidade</p>
+                  <p className="text-sm text-[#4B5563]">Mais agilidade</p>
                 </div>
                 <div className="w-px h-12 bg-[#262630]" />
                 <div>
@@ -83,7 +83,7 @@ export const AboutSection = () => {
                     <AnimatedNumber value={100} suffix="%" />
                   </p>
 
-                  <p className="text-sm text-[#9CA3AF]">Digital</p>
+                  <p className="text-sm text-[#4B5563]">Digital</p>
                 </div>
               </div>
             </div>

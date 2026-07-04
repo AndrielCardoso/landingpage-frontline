@@ -64,7 +64,7 @@ export const Features = () => {
   return (
     <section id="recursos" className="py-24 md:py-32 relative">
       {/* Separator */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#262630] to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#E5E7EB] to-transparent" />
 
       <div className="container mx-auto px-6">
         <motion.div
@@ -79,7 +79,7 @@ export const Features = () => {
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
             Arsenal clínico completo
             <br />
-            <span className="text-[#9CA3AF]">na palma da sua mão.</span>
+            <span className="text-[#4B5563]">na palma da sua mão.</span>
           </h2>
         </motion.div>
 
@@ -101,7 +101,7 @@ export const Features = () => {
                 hidden: { opacity: 0, y: 30, scale: 0.95 },
                 visible: { opacity: 1, y: 0, scale: 1, transition: { type: "spring", stiffness: 100, damping: 20 } }
               }}
-              className="p-7 rounded-2xl bg-[#141419] border border-[#262630] hover:border-[#0066FF]/20 transition-all duration-300 group"
+              className="p-7 rounded-2xl bg-white border border-[#E5E7EB] hover:border-[#0066FF]/20 transition-all duration-300 group"
             >
               <div className="flex items-center justify-between mb-5">
                 <div className="w-10 h-10 rounded-xl bg-[#0066FF]/10 flex items-center justify-center text-[#0066FF] group-hover:scale-110 transition-transform">
@@ -116,7 +116,7 @@ export const Features = () => {
               <h3 className="text-lg font-bold text-[#111827] mb-2 tracking-tight">
                 {f.title}
               </h3>
-              <p className="text-sm text-[#9CA3AF] leading-relaxed">
+              <p className="text-sm text-[#4B5563] leading-relaxed">
                 {f.desc}
               </p>
             </motion.div>
@@ -134,7 +134,7 @@ export const Features = () => {
           viewport={{ once: true, margin: "-50px" }}
           className="max-w-4xl mx-auto"
         >
-          <motion.p variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} className="text-center text-sm text-[#9CA3AF] mb-6">
+          <motion.p variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} className="text-center text-sm text-[#4B5563] mb-6">
             E mais de 20 funcionalidades integradas:
           </motion.p>
           <div className="flex flex-wrap justify-center gap-3">
@@ -142,7 +142,7 @@ export const Features = () => {
               <motion.div
                 key={i}
                 variants={{ hidden: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1, transition: { type: "spring" } } }}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black/5 border border-white/5 text-sm text-[#9CA3AF] hover:text-[#111827] hover:border-white/15 transition-all"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black/5 border border-white/5 text-sm text-[#4B5563] hover:text-[#111827] hover:border-white/15 transition-all"
               >
                 <f.icon className="w-3.5 h-3.5" />
                 {f.label}

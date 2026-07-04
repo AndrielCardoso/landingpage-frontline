@@ -62,7 +62,7 @@ export const WhatsappSection = () => {
                 Inteligência Clínica 24h.
               </span>
             </h2>
-            <p className="text-lg text-[#9CA3AF]">
+            <p className="text-lg text-[#4B5563]">
               Vá além das respostas automáticas robóticas. Ofereça um assistente virtual com IA de última geração que lê receitas, alerta sobre interações e agenda lembretes de forma autônoma.
             </p>
           </motion.div>
@@ -95,13 +95,13 @@ export const WhatsappSection = () => {
                 animate={{ opacity: 1, scale: 1, x: 0, y: 0 }}
                 exit={{ opacity: 0, scale: 0.8, x: -20, y: -20 }}
                 transition={{ type: "spring", stiffness: 100, damping: 15 }}
-                className="absolute top-1/4 right-0 lg:-right-12 z-20 max-w-[250px] bg-[#141419]/90 backdrop-blur-md border border-[#262630] rounded-2xl rounded-tr-none p-4 shadow-2xl"
+                className="absolute top-1/4 right-0 lg:-right-12 z-20 max-w-[250px] bg-white/90 backdrop-blur-md border border-[#E5E7EB] rounded-2xl rounded-tr-none p-4 shadow-2xl"
               >
                 <div className="flex items-center gap-2 mb-2">
                   <div className="w-2 h-2 rounded-full bg-[#10B981] animate-pulse" />
                   <span className="text-xs font-semibold text-[#10B981] uppercase tracking-wider">IA Frontline</span>
                 </div>
-                <p className="text-sm text-[#EDEDED] leading-relaxed">
+                <p className="text-sm text-[#374151] leading-relaxed">
                   {activeData?.bubble}
                 </p>
               </motion.div>
@@ -120,8 +120,8 @@ export const WhatsappSection = () => {
                 onClick={() => setActiveFeature(feat.id)}
                 className={`relative cursor-pointer p-6 rounded-2xl transition-all duration-300 overflow-hidden ${
                   activeFeature === feat.id 
-                    ? "bg-[#141419] border border-[#10B981]/30 shadow-[0_0_40px_rgba(16,185,129,0.05)]" 
-                    : "bg-transparent border border-transparent hover:bg-[#141419]/40"
+                    ? "bg-white border border-[#10B981]/30 shadow-[0_0_40px_rgba(16,185,129,0.05)]" 
+                    : "bg-transparent border border-transparent hover:bg-[#F3F4F6]/50"
                 }`}
               >
                 {/* Active Indicator Line */}
@@ -133,7 +133,7 @@ export const WhatsappSection = () => {
                 )}
                 
                 <h3 className={`text-xl font-bold mb-2 transition-colors ${
-                  activeFeature === feat.id ? "text-[#111827]" : "text-[#9CA3AF]"
+                  activeFeature === feat.id ? "text-[#111827]" : "text-[#4B5563]"
                 }`}>
                   {feat.title}
                 </h3>
@@ -145,7 +145,7 @@ export const WhatsappSection = () => {
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
                     >
-                      <p className="text-[#9CA3AF] leading-relaxed text-sm">
+                      <p className="text-[#4B5563] leading-relaxed text-sm">
                         {feat.desc}
                       </p>
                     </motion.div>
@@ -158,14 +158,14 @@ export const WhatsappSection = () => {
 
         {/* Security & CTA Footer */}
         <div className="max-w-6xl mx-auto mt-20">
-          <div className="bg-gradient-to-r from-[#141419] to-[#0A0A0F] border border-[#262630] rounded-3xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-10">
+          <div className="bg-gradient-to-r from-white to-[#F4F4F5] border border-[#E5E7EB] rounded-3xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-10">
             
             <div className="flex-1 space-y-4">
               <div className="flex items-center gap-3">
                 <ShieldCheck className="w-6 h-6 text-[#10B981]" />
                 <h4 className="text-xl font-bold text-[#111827]">Engenharia Clínica Segura</h4>
               </div>
-              <p className="text-[#9CA3AF] text-sm leading-relaxed max-w-xl">
+              <p className="text-[#4B5563] text-sm leading-relaxed max-w-xl">
                 O Frontline IA possui um classificador inteligente em 2 etapas, bloqueio estrito contra alucinações médicas (Zero Fake Info) e filtro nativo que impede prescrições autônomas, mantendo 100% do compliance legal da sua drogaria.
               </p>
             </div>
@@ -181,7 +181,7 @@ export const WhatsappSection = () => {
                 <MessageSquare className="w-5 h-5 relative z-10" />
                 <span className="relative z-10">Integrar ao meu WhatsApp</span>
               </a>
-              <div className="flex items-center justify-center gap-2 text-xs text-[#9CA3AF] font-medium">
+              <div className="flex items-center justify-center gap-2 text-xs text-[#4B5563] font-medium">
                 <Zap className="w-3.5 h-3.5 text-[#10B981]" />
                 Reduz até 80% do call center
               </div>

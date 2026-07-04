@@ -29,7 +29,7 @@ export const RecordsSection = () => {
   const [activeTab, setActiveTab] = useState(features[0].id);
 
   return (
-    <section className="py-24 md:py-32 relative bg-[#050505] border-t border-[#141419]" id="prontuario">
+    <section className="py-24 md:py-32 relative bg-[#FAFAFA] border-t border-[#E5E7EB]" id="prontuario">
       {/* Abstract Medical Grid Background */}
       <div className="absolute inset-0 bg-[url('https://transparenttextures.com/patterns/cubes.png')] opacity-5 pointer-events-none mix-blend-screen" />
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-bl from-[#0066FF]/5 to-transparent rounded-full blur-[100px] pointer-events-none" />
@@ -50,9 +50,9 @@ export const RecordsSection = () => {
             </div>
             <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-6 leading-tight">
               A ferramenta que você usa hoje<br className="hidden md:block" />
-              <span className="text-[#9CA3AF]">protege ou expõe a sua farmácia?</span>
+              <span className="text-[#4B5563]">protege ou expõe a sua farmácia?</span>
             </h2>
-            <p className="text-lg text-[#9CA3AF] max-w-2xl mx-auto">
+            <p className="text-lg text-[#4B5563] max-w-2xl mx-auto">
               Transforme a sala de serviços em um verdadeiro Consultório Farmacêutico Digital. Troque papéis amadores por um Prontuário Eletrônico seguro, assinado digitalmente e focado em lucro e fidelização.
             </p>
           </motion.div>
@@ -64,7 +64,7 @@ export const RecordsSection = () => {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="p-8 rounded-3xl bg-[#141419]/50 border border-[#262630] backdrop-blur-sm"
+            className="p-8 rounded-3xl bg-black/50 border border-[#E5E7EB] backdrop-blur-sm"
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-full bg-red-500/10 flex items-center justify-center">
@@ -79,7 +79,7 @@ export const RecordsSection = () => {
                 "Arquivos mortos que ocupam espaço e violam a LGPD.",
                 "Paciente faz o exame e vai embora (Zero fidelização)."
               ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-[#9CA3AF]">
+                <li key={i} className="flex items-start gap-3 text-[#4B5563]">
                   <XCircle className="w-5 h-5 text-red-500/50 shrink-0 mt-0.5" />
                   <span className="leading-relaxed">{item}</span>
                 </li>
@@ -91,7 +91,7 @@ export const RecordsSection = () => {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="p-8 rounded-3xl bg-gradient-to-b from-[#141419] to-[#0A0A0F] border border-[#0066FF]/30 shadow-[0_0_50px_rgba(0,102,255,0.1)] relative overflow-hidden"
+            className="p-8 rounded-3xl bg-gradient-to-b from-white to-[#F4F4F5] border border-[#0066FF]/30 shadow-[0_0_50px_rgba(0,102,255,0.1)] relative overflow-hidden"
           >
             <div className="absolute top-0 right-0 p-4 opacity-10">
               <ShieldCheck className="w-32 h-32 text-[#0066FF]" />
@@ -109,7 +109,7 @@ export const RecordsSection = () => {
                 "Dados blindados e criptografados na nuvem (LGPD).",
                 "Portal do Paciente que lembra retornos e doses."
               ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-[#EDEDED]">
+                <li key={i} className="flex items-start gap-3 text-[#374151]">
                   <CheckCircle2 className="w-5 h-5 text-[#0066FF] shrink-0 mt-0.5" />
                   <span className="leading-relaxed">{item}</span>
                 </li>
@@ -127,8 +127,8 @@ export const RecordsSection = () => {
                 onClick={() => setActiveTab(feat.id)}
                 className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all ${
                   activeTab === feat.id
-                    ? "bg-[#0066FF] text-[#111827] shadow-[0_0_20px_rgba(0,102,255,0.4)]"
-                    : "bg-[#141419] text-[#9CA3AF] border border-[#262630] hover:bg-[#1A1A24]"
+                    ? "bg-[#0066FF] text-white shadow-[0_0_20px_rgba(0,102,255,0.4)]"
+                    : "bg-white text-[#4B5563] border border-[#E5E7EB] hover:bg-[#F3F4F6]"
                 }`}
               >
                 <feat.icon className="w-4 h-4" />
@@ -137,7 +137,7 @@ export const RecordsSection = () => {
             ))}
           </div>
 
-          <div className="bg-[#141419] border border-[#262630] rounded-3xl p-8 min-h-[160px] flex items-center justify-center text-center">
+          <div className="bg-white border border-[#E5E7EB] rounded-3xl p-8 min-h-[160px] flex items-center justify-center text-center">
             <AnimatePresence mode="wait">
               {features.map((feat) => 
                 activeTab === feat.id ? (
@@ -149,7 +149,7 @@ export const RecordsSection = () => {
                     transition={{ duration: 0.2 }}
                     className="max-w-2xl"
                   >
-                    <p className="text-[#EDEDED] text-lg leading-relaxed">
+                    <p className="text-[#374151] text-lg leading-relaxed">
                       {feat.content}
                     </p>
                   </motion.div>

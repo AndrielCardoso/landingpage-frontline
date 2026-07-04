@@ -44,7 +44,7 @@ export const TotemSection = () => {
 
   return (
     <section className="py-24 relative" id="totem">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#262630] to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#E5E7EB] to-transparent" />
       
       {/* Subtle background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#0066FF]/5 rounded-full blur-[150px] pointer-events-none" />
@@ -59,7 +59,7 @@ export const TotemSection = () => {
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
             O futuro do seu balcão.
           </h2>
-          <p className="text-[#9CA3AF] max-w-2xl mx-auto text-lg">
+          <p className="text-[#4B5563] max-w-2xl mx-auto text-lg">
             Dê autonomia ao seu cliente e libere sua equipe com o Frontline Totem.
           </p>
         </div>
@@ -106,11 +106,11 @@ export const TotemSection = () => {
                   className={`cursor-pointer border-l-2 pl-5 py-3 transition-all duration-300 ${
                     activeFeature === feat.id 
                       ? "border-[#0066FF]" 
-                      : "border-[#262630] hover:border-[#4A4A5A]"
+                      : "border-[#E5E7EB] hover:border-[#4A4A5A]"
                   }`}
                 >
                   <h3 className={`text-lg font-semibold transition-colors ${
-                    activeFeature === feat.id ? "text-[#111827]" : "text-[#9CA3AF]"
+                    activeFeature === feat.id ? "text-[#111827]" : "text-[#4B5563]"
                   }`}>
                     {feat.title}
                   </h3>
@@ -122,7 +122,7 @@ export const TotemSection = () => {
                         exit={{ height: 0, opacity: 0 }}
                         className="overflow-hidden"
                       >
-                        <p className="text-[#9CA3AF] text-sm mt-2 leading-relaxed pr-4">
+                        <p className="text-[#4B5563] text-sm mt-2 leading-relaxed pr-4">
                           {feat.desc}
                         </p>
                       </motion.div>
@@ -133,13 +133,13 @@ export const TotemSection = () => {
             </div>
 
             {/* Tech Specs & CTA */}
-            <div className="bg-[#141419] border border-[#262630] rounded-2xl p-6 md:p-8">
+            <div className="bg-white border border-[#E5E7EB] rounded-2xl p-6 md:p-8">
               <h4 className="text-[#111827] font-semibold mb-4 text-sm uppercase tracking-wide">
                 Tecnologia & Segurança
               </h4>
               <ul className="space-y-3 mb-8">
                 {techSpecs.map((spec, i) => (
-                  <li key={i} className="flex items-start gap-3 text-sm text-[#9CA3AF]">
+                  <li key={i} className="flex items-start gap-3 text-sm text-[#4B5563]">
                     <Check className="w-4 h-4 text-[#10B981] shrink-0 mt-0.5" />
                     {spec}
                   </li>
@@ -150,7 +150,7 @@ export const TotemSection = () => {
                 href="https://wa.me/5547988141031?text=Olá!%20Gostaria%20de%20implantar%20o%20Totem%20na%20minha%20farmácia."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#0066FF] text-[#111827] font-semibold text-sm hover:bg-[#0052CC] transition-all"
+                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#0066FF] text-white font-semibold text-sm hover:bg-[#0052CC] transition-all"
               >
                 <MessageCircle className="w-4 h-4" />
                 Falar com consultor

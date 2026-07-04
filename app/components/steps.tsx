@@ -25,7 +25,7 @@ export const StepsSection = () => {
   return (
     <section className="py-24 md:py-32 relative">
       {/* Separator */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#262630] to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#E5E7EB] to-transparent" />
 
       <div className="container mx-auto px-6">
         <motion.div
@@ -39,7 +39,7 @@ export const StepsSection = () => {
           </p>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
             Três passos.{" "}
-            <span className="text-[#9CA3AF]">Zero complicação.</span>
+            <span className="text-[#4B5563]">Zero complicação.</span>
           </h2>
         </motion.div>
 
@@ -64,7 +64,7 @@ export const StepsSection = () => {
             >
               {/* Number + Line */}
               <div className="flex flex-col items-center">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#141419] border border-[#262630] flex items-center justify-center text-lg sm:text-xl font-black text-[#0066FF] group-hover:border-[#0066FF]/30 transition-colors shrink-0">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white border border-[#E5E7EB] flex items-center justify-center text-lg sm:text-xl font-black text-[#0066FF] group-hover:border-[#0066FF]/30 transition-colors shrink-0">
                   {step.number}
                 </div>
                 {i < steps.length - 1 && (
@@ -83,7 +83,7 @@ export const StepsSection = () => {
                 <h3 className="text-lg sm:text-xl font-bold text-[#111827] mb-2 tracking-tight">
                   {step.title}
                 </h3>
-                <p className="text-[#9CA3AF] text-sm leading-relaxed">
+                <p className="text-[#4B5563] text-sm leading-relaxed">
                   {step.desc}
                 </p>
               </div>
