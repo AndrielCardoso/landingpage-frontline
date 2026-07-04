@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="scroll-smooth">
       <body
-        className={`${GeistSans.className} min-h-screen bg-[#0A0A0F] text-[#EDEDED] antialiased`}
+        className={`${GeistSans.className} min-h-screen bg-[#FAFAFA] text-[#111827] antialiased`}
       >
         <JsonLd />
         {children}
