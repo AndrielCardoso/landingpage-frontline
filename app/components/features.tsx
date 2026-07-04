@@ -107,11 +107,6 @@ export const Features = () => {
                 <div className="w-10 h-10 rounded-xl bg-[#0066FF]/10 flex items-center justify-center text-[#0066FF] group-hover:scale-110 transition-transform">
                   <f.icon className="w-5 h-5" />
                 </div>
-                {f.exclusive && (
-                  <span className="px-2.5 py-1 rounded-md bg-[#0066FF]/10 text-[#0066FF] text-[10px] font-bold uppercase tracking-wider border border-[#0066FF]/20">
-                    Exclusivo empresas
-                  </span>
-                )}
               </div>
               <h3 className="text-lg font-bold text-[#111827] mb-2 tracking-tight">
                 {f.title}

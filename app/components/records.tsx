@@ -64,7 +64,7 @@ export const RecordsSection = () => {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="p-8 rounded-3xl bg-black/50 border border-[#E5E7EB] backdrop-blur-sm"
+            className="p-8 rounded-3xl bg-white border border-[#E5E7EB] shadow-sm"
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-full bg-red-500/10 flex items-center justify-center">
