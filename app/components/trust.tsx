@@ -41,6 +41,20 @@ export const TrustSection = () => {
               Falar com um consultor
             </a>
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.2 }}
+            className="mt-16 mx-auto w-full aspect-[16/7] rounded-[2rem] overflow-hidden border border-[#E5E7EB] shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] relative"
+          >
+            <img 
+              src="/Frontline_Family.png" 
+              alt="Família Frontline"
+              className="absolute inset-0 w-full h-full object-cover object-[center_30%]"
+            />
+          </motion.div>
         </motion.div>
       </div>
     </section>
