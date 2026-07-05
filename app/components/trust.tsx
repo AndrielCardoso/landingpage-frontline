@@ -42,19 +42,20 @@ export const TrustSection = () => {
             </a>
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.2 }}
-            className="mt-20 mx-auto w-full max-w-5xl relative flex justify-center"
-          >
-            <img 
-              src="/Frontline_Family.png" 
-              alt="Família Frontline"
-              className="w-full h-auto object-contain drop-shadow-2xl"
-            />
-          </motion.div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.2 }}
+          className="mt-8 mx-auto w-full max-w-5xl relative flex justify-center"
+        >
+          <img 
+            src="/Frontline_Family.png" 
+            alt="Família Frontline"
+            className="w-full h-auto object-contain drop-shadow-2xl"
+          />
         </motion.div>
       </div>
     </section>
