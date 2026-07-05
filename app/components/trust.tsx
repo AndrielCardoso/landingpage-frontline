@@ -49,7 +49,7 @@ export const TrustSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.2 }}
-          className="mt-8 mx-auto w-full max-w-5xl relative flex justify-center"
+          className="-mt-10 md:-mt-20 mx-auto w-full max-w-5xl relative flex justify-center"
         >
           <img 
             src="/Frontline_Family.png" 
