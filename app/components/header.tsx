@@ -4,11 +4,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
-const navLinks = [
-  { label: "Sobre", href: "#sobre" },
-  { label: "Recursos", href: "#recursos" },
-  { label: "Planos", href: "#planos" },
-];
+const navLinks: { label: string; href: string }[] = [];
 
 export const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -41,15 +37,6 @@ export const Header = () => {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-10">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-sm font-medium text-[#4B5563] hover:text-[#111827] transition-colors duration-200"
-              >
-                {link.label}
-              </a>
-            ))}
           </nav>
 
           {/* Desktop CTA */}
@@ -83,16 +70,6 @@ export const Header = () => {
             className="md:hidden bg-[#F4F4F5]/95 backdrop-blur-xl border-t border-white/5"
           >
             <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
-              {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="text-base font-medium text-[#4B5563] hover:text-[#111827] transition-colors py-2"
-                >
-                  {link.label}
-                </a>
-              ))}
               <a
                 href="https://wa.me/5547988141031?text=Olá!%20Gostaria%20de%20falar%20com%20um%20consultor%20sobre%20o%20Frontline."
                 target="_blank"
