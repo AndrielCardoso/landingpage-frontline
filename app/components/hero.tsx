@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle } from "lucide-react";
 
 const phrases = [
-  "para multiplicar seus resultados.",
-  "para aumentar seu ticket médio.",
-  "para gerar vendas agregadas.",
-  "para fidelizar mais pacientes.",
-  "para escalar o seu negócio.",
-  "para farmácias de alto faturamento.",
+  "para conectar farmácia e paciente.",
+  "para facilitar o trabalho no balcão.",
+  "para profissionalizar seu atendimento.",
+  "para fidelizar quem entra na sua loja.",
+  "para cumprir a legislação sem dor de cabeça.",
+  "para farmácias que focam em relacionamento.",
 ];
 
 export const Hero = () => {
@@ -76,8 +76,7 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-[#4B5563] max-w-2xl mx-auto mb-12 leading-relaxed"
           >
-            Prontuário digital, fluxogramas de alta conversão e suporte clínico focado
-            em elevar o faturamento e a autoridade da sua farmácia.
+            A ponte digital perfeita entre a sua farmácia e o seu paciente. Prontuário na palma da mão, Bula Inteligente para a equipe e Declarações de Serviços em um clique.
           </motion.p>
 
           {/* CTAs */}

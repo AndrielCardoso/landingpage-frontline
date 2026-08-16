@@ -49,11 +49,11 @@ export const RecordsSection = () => {
               </span>
             </div>
             <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-6 leading-tight">
-              A ferramenta que você usa hoje<br className="hidden md:block" />
-              <span className="text-[#4B5563]">gera custo ou gera lucro?</span>
+              A sua farmácia cumpre a lei<br className="hidden md:block" />
+              <span className="text-[#4B5563]">ou está correndo riscos?</span>
             </h2>
             <p className="text-lg text-[#4B5563] max-w-2xl mx-auto">
-              Transforme a sala de serviços em um Consultório Farmacêutico Altamente Rentável. Troque papéis amadores por um Prontuário Eletrônico que encanta clientes, fortalece sua autoridade e multiplica retornos.
+              A Anvisa (RDC 44/2009) exige a emissão da Declaração de Serviços Farmacêuticos. O Frontline transforma essa obrigação em um Prontuário Eletrônico seguro, assinado digitalmente e focado em encantar o paciente.
             </p>
           </motion.div>
         </div>
@@ -74,10 +74,10 @@ export const RecordsSection = () => {
             </div>
             <ul className="space-y-4">
               {[
-                "Prontuários ilegíveis que não geram acompanhamento.",
-                "Serviços percebidos como commoditie de baixo valor.",
+                "Prontuários de papel que se perdem e não geram histórico.",
+                "Falta da Declaração de Serviços (Risco de autuação da Anvisa).",
                 "Arquivos mortos que ocupam espaço e violam a LGPD.",
-                "Paciente faz o exame e vai embora (Zero fidelização)."
+                "O paciente vai embora com um pedaço de papel e não volta."
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-[#4B5563]">
                   <XCircle className="w-5 h-5 text-red-500/50 shrink-0 mt-0.5" />
@@ -104,10 +104,10 @@ export const RecordsSection = () => {
             </div>
             <ul className="space-y-4 relative z-10">
               {[
-                "Busca instantânea de pacientes para um atendimento VIP.",
-                "Assinatura eletrônica que confere autoridade e justifica o preço.",
-                "Dados estruturados que identificam oportunidades de recompra.",
-                "Portal do Paciente que garante o retorno e a fidelização contínua."
+                "Emissão instantânea da Declaração de Serviços digital.",
+                "Assinatura eletrônica do paciente direto na tela do tablet.",
+                "Dados blindados e estruturados que geram insights de recompra.",
+                "Portal do Paciente que envia laudos direto para o celular dele."
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-[#374151]">
                   <CheckCircle2 className="w-5 h-5 text-[#0066FF] shrink-0 mt-0.5" />

@@ -8,22 +8,22 @@ const teamBenefits = [
   {
     icon: ShieldCheck,
     title: "Indicação Segura",
-    desc: "Apoio clínico constante para que sua equipe perca o medo de indicar soluções de alto valor."
+    desc: "Apoio clínico constante para que sua equipe oriente o paciente com total confiança."
   },
   {
     icon: Zap,
-    title: "Atendimento Lucrativo",
-    desc: "Protocolos ágeis. Seu time resolve a dúvida rápido e tem tempo para oferecer a solução completa."
+    title: "Atendimento Qualificado",
+    desc: "A Bula Inteligente dá o roteiro exato para a equipe resolver dúvidas e encantar o cliente."
   },
   {
     icon: Users,
-    title: "Receita Previsível",
-    desc: "Todo farmacêutico do time passa a ter o mesmo poder de argumentação e conversão no balcão."
+    title: "Relacionamento de Valor",
+    desc: "Todo farmacêutico da loja passa a criar um vínculo duradouro de saúde com os pacientes."
   },
   {
     icon: BookOpen,
-    title: "Rampagem Rápida",
-    desc: "Novos colaboradores aprendem a gerar valor e faturamento no padrão da farmácia em poucos dias."
+    title: "Facilidade de Uso",
+    desc: "Novos colaboradores aprendem a utilizar o sistema e gerar valor em poucas horas, sem burocracia."
   }
 ];
 
@@ -42,12 +42,12 @@ export const PricingSection = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-              Equipe empoderada.
+              Equipe informada.
               <br />
-              <span className="text-[#4B5563]">Lucratividade escalada.</span>
+              <span className="text-[#4B5563]">Atendimento qualificado.</span>
             </h2>
             <p className="text-[#4B5563] max-w-2xl mx-auto">
-              O Frontline é o motor de serviços da sua farmácia. A ferramenta definitiva para dar confiança à sua equipe, justificar seus preços e aumentar drasticamente o Lifetime Value (LTV) de cada cliente.
+              O Frontline é o parceiro de todo balconista e farmacêutico. Uma ferramenta focada em dar as informações certas no momento certo, facilitando a vida no balcão e aproximando a farmácia do paciente.
             </p>
           </motion.div>
 

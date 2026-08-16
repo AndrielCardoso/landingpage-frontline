@@ -29,10 +29,10 @@ export const StandardizationSection = () => {
             <h2 className="text-3xl md:text-6xl font-semibold tracking-tight leading-[1.1] mb-6">
               Saia do achismo,
               <br />
-              <span className="text-[#0066FF]">padronize o faturamento.</span>
+              <span className="text-[#0066FF]">profissionalize o balcão.</span>
             </h2>
             <p className="text-lg text-[#4B5563] max-w-2xl mx-auto leading-relaxed">
-              O Frontline padroniza o atendimento da sua equipe para que cada colaborador seja capaz de entregar o mesmo padrão de excelência e gerar o mesmo volume de vendas agregadas, tornando seu negócio 100% escalável.
+              O Frontline transforma qualquer balconista em um verdadeiro consultor de saúde. A Bula Inteligente entrega na tela exatamente o que ele precisa saber para orientar o paciente e sugerir a venda certa.
             </p>
           </motion.div>
 
@@ -49,18 +49,18 @@ export const StandardizationSection = () => {
             {[
               {
                 icon: ShieldCheck,
-                title: "Venda com Autoridade",
-                desc: "Elimine o medo da equipe. Com respaldo científico na tela, a indicação se torna uma venda natural.",
+                title: "Confiança na Dispensação",
+                desc: "Acesso imediato a interações e posologia. O atendente passa segurança e o cliente percebe o valor.",
               },
               {
                 icon: Zap,
-                title: "Agilidade que Vende",
-                desc: "Atendimentos clínicos que não travam o balcão. Seu time resolve o problema rápido e vende mais.",
+                title: "Consultas Rápidas",
+                desc: "A Bula Inteligente resume o que importa. Sem perda de tempo pesquisando no Google ou lendo letras miúdas.",
               },
               {
                 icon: Target,
-                title: "Foco no Resultado",
-                desc: "O sistema guia o colaborador direto para a conduta clínica exata, impulsionando o ticket médio.",
+                title: "Venda Agregada Natural",
+                desc: "O sistema sugere complementos baseados no sintoma, tornando a indicação profissional, ética e rentável.",
               },
             ].map((item, i) => (
               <motion.div

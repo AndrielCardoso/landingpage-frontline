@@ -6,18 +6,18 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    title: "Entrega real de resultado",
-    content: `"Após os treinamentos, o Frontline começou a entregar os resultados oferecidos. Hoje estamos muito satisfeitos com o aumento nas vendas e na fidelização de pacientes."`,
+    title: "Caminho sem volta",
+    content: `"Eu não fico mais sem o Frontline, é um caminho sem volta, indispensável pra gente. Essencial, não dá mais pra ficar sem."`,
     author: "— Proprietário de rede com 19 farmácias"
   },
   {
-    title: "Eficiência operacional e padronização",
-    content: `"O Frontline nos ajudou a deixar nossos serviços farmacêuticos organizados, autônomos e altamente rentáveis. O retorno sobre o investimento foi imediato."`,
+    title: "O cliente fica impressionado",
+    content: `"O cliente sai impressionado. Ele recebe tudo no celular, a gente não perde tempo escrevendo papelzinho. Mudou a cara da farmácia."`,
     author: "— Proprietário de rede com 8 farmácias"
   },
   {
-    title: "Motivação e comportamento no balcão",
-    content: `"Já fiz várias campanhas com premiações até maiores, mas o engajamento com o Frontline está fora de série. Como gestor, estou vendo a equipe extremamente motivada."`,
+    title: "A equipe perdeu o medo",
+    content: `"Meus balconistas estão muito mais confiantes. A informação tá na tela, o atendimento fica muito mais profissional e vende mais."`,
     author: "— Gestor e proprietário de rede com 64 farmácias"
   }
 ];

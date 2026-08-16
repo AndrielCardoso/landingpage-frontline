@@ -19,28 +19,29 @@ import {
   BookOpen,
   HeartPulse,
   Syringe,
+  Smartphone,
 } from "lucide-react";
 
 const mainFeatures = [
   {
-    icon: GitFork,
-    title: "Triagem de Alta Conversão",
-    desc: "Fluxogramas que guiam o atendimento e identificam naturalmente oportunidades de vendas agregadas.",
+    icon: Smartphone,
+    title: "Portal do Paciente",
+    desc: "O paciente acessa exames e histórico direto do celular. Conectividade que cria laços e fideliza.",
   },
   {
     icon: FileHeart,
-    title: "Prontuário que Fideliza",
-    desc: "Histórico completo do paciente gerando retorno frequente, acompanhamento e recompra.",
+    title: "Prontuário Digital",
+    desc: "Acompanhe a saúde do seu cliente de perto. Acabe com o papel e torne o atendimento profissional.",
+  },
+  {
+    icon: BookOpen,
+    title: "Bula Inteligente",
+    desc: "Informação detalhada para o balconista saber exatamente o que falar na dispensação e sugerir vendas adicionais.",
   },
   {
     icon: Shield,
-    title: "Autoridade no Balcão",
-    desc: "Entregue segurança técnica que justifica seus preços e gera confiança instantânea do cliente.",
-  },
-  {
-    icon: BarChart3,
-    title: "Foco no Ticket Médio",
-    desc: "Padronize o atendimento da sua equipe para oferecer a solução completa em cada receita.",
+    title: "Equipe Empoderada",
+    desc: "Com o Frontline, qualquer membro da sua equipe tira dúvidas em segundos e passa total confiança no balcão.",
   },
 ];
 
@@ -76,9 +77,9 @@ export const Features = () => {
             Recursos
           </p>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
-            Serviço Clínico que
+            Integração completa
             <br />
-            <span className="text-[#0066FF]">gera retorno financeiro.</span>
+            <span className="text-[#0066FF]">entre balcão e paciente.</span>
           </h2>
         </motion.div>
 
