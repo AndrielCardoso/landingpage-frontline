@@ -17,7 +17,7 @@ const testimonials = [
   },
   {
     title: "A equipe perdeu o medo",
-    content: `"Meus balconistas estão muito mais confiantes. A informação tá na tela, o atendimento fica muito mais profissional e vende mais."`,
+    content: `"Meus colaboradores estão muito mais confiantes. A informação tá na tela, o atendimento fica muito mais profissional e vende mais."`,
     author: "— Gestor e proprietário de rede com 64 farmácias"
   }
 ];

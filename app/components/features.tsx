@@ -45,20 +45,7 @@ const mainFeatures = [
   },
 ];
 
-const secondaryFeatures = [
-  { icon: Pill, label: "Monografias" },
-  { icon: Baby, label: "Pediatria" },
-  { icon: ClipboardCheck, label: "Protocolos" },
-  { icon: Shield, label: "Segurança" },
-  { icon: Printer, label: "Laudos" },
-  { icon: Users, label: "Equipe" },
-  { icon: BarChart3, label: "Relatórios" },
-  { icon: Stethoscope, label: "Consultas" },
-  { icon: FlaskConical, label: "Fórmulas" },
-  { icon: BookOpen, label: "Referências" },
-  { icon: HeartPulse, label: "Lactação" },
-  { icon: Syringe, label: "Vacinas" },
-];
+
 
 export const Features = () => {
   return (
@@ -118,33 +105,7 @@ export const Features = () => {
           ))}
         </motion.div>
 
-        {/* Secondary Features */}
-        <motion.div
-          variants={{
-            hidden: { opacity: 0 },
-            visible: { opacity: 1, transition: { staggerChildren: 0.05, delayChildren: 0.2 } }
-          }}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
-          className="max-w-4xl mx-auto"
-        >
-          <motion.p variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} className="text-center text-sm text-[#4B5563] mb-6">
-            E mais de 20 funcionalidades integradas:
-          </motion.p>
-          <div className="flex flex-wrap justify-center gap-3">
-            {secondaryFeatures.map((f, i) => (
-              <motion.div
-                key={i}
-                variants={{ hidden: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1, transition: { type: "spring" } } }}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black/5 border border-white/5 text-sm text-[#4B5563] hover:text-[#111827] hover:border-white/15 transition-all"
-              >
-                <f.icon className="w-3.5 h-3.5" />
-                {f.label}
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+
       </div>
     </section>
   );
