@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle } from "lucide-react";
 
 const phrases = [
-  "para quem cuida de pessoas.",
-  "para quem quer mais agilidade.",
-  "para gerar mais confiança.",
-  "para otimizar o atendimento.",
-  "para reduzir erros do dia a dia.",
-  "para farmácias de excelência.",
+  "para multiplicar seus resultados.",
+  "para aumentar seu ticket médio.",
+  "para gerar vendas agregadas.",
+  "para fidelizar mais pacientes.",
+  "para escalar o seu negócio.",
+  "para farmácias de alto faturamento.",
 ];
 
 export const Hero = () => {
@@ -76,8 +76,8 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-[#4B5563] max-w-2xl mx-auto mb-12 leading-relaxed"
           >
-            Prontuário digital, fluxogramas inteligentes e suporte em tempo real
-            para farmácias que levam a saúde a sério.
+            Prontuário digital, fluxogramas de alta conversão e suporte clínico focado
+            em elevar o faturamento e a autoridade da sua farmácia.
           </motion.p>
 
           {/* CTAs */}
@@ -89,7 +89,7 @@ export const Hero = () => {
           >
             {/* CTA - Primary B2B */}
             <a
-              href="https://wa.me/5547988141031?text=Olá!%20Gostaria%20de%20falar%20com%20um%20consultor%20sobre%20o%20Frontline."
+              href="https://wa.me/5547996085407?text=Olá!%20Gostaria%20de%20falar%20com%20um%20consultor%20sobre%20o%20Frontline."
               target="_blank"
               rel="noopener noreferrer"
               className="group flex sm:inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#0066FF] text-white font-semibold text-base hover:bg-[#0052CC] transition-all duration-200 shadow-[0_0_30px_rgba(0,102,255,0.3)] hover:shadow-[0_0_40px_rgba(0,102,255,0.45)] w-full sm:w-auto"

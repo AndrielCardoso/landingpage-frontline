@@ -29,12 +29,10 @@ export const StandardizationSection = () => {
             <h2 className="text-3xl md:text-6xl font-semibold tracking-tight leading-[1.1] mb-6">
               Saia do achismo,
               <br />
-              <span className="text-[#0066FF]">padronize o atendimento.</span>
+              <span className="text-[#0066FF]">padronize o faturamento.</span>
             </h2>
             <p className="text-lg text-[#4B5563] max-w-2xl mx-auto leading-relaxed">
-              O Frontline padroniza o atendimento dos colaboradores de forma
-              técnica e precisa, garantindo que cada consulta siga protocolos
-              científicos rigorosos.
+              O Frontline padroniza o atendimento da sua equipe para que cada colaborador seja capaz de entregar o mesmo padrão de excelência e gerar o mesmo volume de vendas agregadas, tornando seu negócio 100% escalável.
             </p>
           </motion.div>
 
@@ -51,18 +49,18 @@ export const StandardizationSection = () => {
             {[
               {
                 icon: ShieldCheck,
-                title: "Segurança Técnica",
-                desc: "Elimine o risco de erros humanos com fluxogramas validados cientificamente.",
+                title: "Venda com Autoridade",
+                desc: "Elimine o medo da equipe. Com respaldo científico na tela, a indicação se torna uma venda natural.",
               },
               {
                 icon: Zap,
-                title: "Agilidade Real",
-                desc: "Seu colaborador responde com autoridade instantânea, sem consultar manuais externos.",
+                title: "Agilidade que Vende",
+                desc: "Atendimentos clínicos que não travam o balcão. Seu time resolve o problema rápido e vende mais.",
               },
               {
                 icon: Target,
-                title: "Precisão Clínica",
-                desc: "Cálculos e interações processadas em milissegundos para uma decisão impecável.",
+                title: "Foco no Resultado",
+                desc: "O sistema guia o colaborador direto para a conduta clínica exata, impulsionando o ticket médio.",
               },
             ].map((item, i) => (
               <motion.div

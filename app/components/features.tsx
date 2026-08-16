@@ -23,25 +23,24 @@ import {
 
 const mainFeatures = [
   {
-    icon: Calculator,
-    title: "Calculadora de Doses",
-    desc: "Cálculos precisos para pediatria e adultos com ajuste automático por peso e idade.",
+    icon: GitFork,
+    title: "Triagem de Alta Conversão",
+    desc: "Fluxogramas que guiam o atendimento e identificam naturalmente oportunidades de vendas agregadas.",
   },
   {
     icon: FileHeart,
-    title: "Prontuário Digital",
-    desc: "Histórico completo do paciente com alergias, medicações e atendimentos anteriores.",
-    exclusive: true,
+    title: "Prontuário que Fideliza",
+    desc: "Histórico completo do paciente gerando retorno frequente, acompanhamento e recompra.",
   },
   {
-    icon: AlertTriangle,
-    title: "Interações Medicamentosas",
-    desc: "Detecção instantânea de interações perigosas entre medicamentos e alimentos.",
+    icon: Shield,
+    title: "Autoridade no Balcão",
+    desc: "Entregue segurança técnica que justifica seus preços e gera confiança instantânea do cliente.",
   },
   {
-    icon: GitFork,
-    title: "Triagem Avançada",
-    desc: "Fluxogramas inteligentes que guiam o atendimento do início ao fim.",
+    icon: BarChart3,
+    title: "Foco no Ticket Médio",
+    desc: "Padronize o atendimento da sua equipe para oferecer a solução completa em cada receita.",
   },
 ];
 
@@ -77,9 +76,9 @@ export const Features = () => {
             Recursos
           </p>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
-            Arsenal clínico completo
+            Serviço Clínico que
             <br />
-            <span className="text-[#4B5563]">na palma da sua mão.</span>
+            <span className="text-[#0066FF]">gera retorno financeiro.</span>
           </h2>
         </motion.div>
 

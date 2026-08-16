@@ -50,10 +50,10 @@ export const RecordsSection = () => {
             </div>
             <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-6 leading-tight">
               A ferramenta que você usa hoje<br className="hidden md:block" />
-              <span className="text-[#4B5563]">protege ou expõe a sua farmácia?</span>
+              <span className="text-[#4B5563]">gera custo ou gera lucro?</span>
             </h2>
             <p className="text-lg text-[#4B5563] max-w-2xl mx-auto">
-              Transforme a sala de serviços em um verdadeiro Consultório Farmacêutico Digital. Troque papéis amadores por um Prontuário Eletrônico seguro, assinado digitalmente e focado em lucro e fidelização.
+              Transforme a sala de serviços em um Consultório Farmacêutico Altamente Rentável. Troque papéis amadores por um Prontuário Eletrônico que encanta clientes, fortalece sua autoridade e multiplica retornos.
             </p>
           </motion.div>
         </div>
@@ -74,8 +74,8 @@ export const RecordsSection = () => {
             </div>
             <ul className="space-y-4">
               {[
-                "Prontuários ilegíveis e fichas impressas perdidas.",
-                "Declarações sem validade jurídica forte.",
+                "Prontuários ilegíveis que não geram acompanhamento.",
+                "Serviços percebidos como commoditie de baixo valor.",
                 "Arquivos mortos que ocupam espaço e violam a LGPD.",
                 "Paciente faz o exame e vai embora (Zero fidelização)."
               ].map((item, i) => (
@@ -104,10 +104,10 @@ export const RecordsSection = () => {
             </div>
             <ul className="space-y-4 relative z-10">
               {[
-                "Busca instantânea de pacientes por CPF.",
-                "Assinatura biométrica/eletrônica na tela do tablet.",
-                "Dados blindados e criptografados na nuvem (LGPD).",
-                "Portal do Paciente que lembra retornos e doses."
+                "Busca instantânea de pacientes para um atendimento VIP.",
+                "Assinatura eletrônica que confere autoridade e justifica o preço.",
+                "Dados estruturados que identificam oportunidades de recompra.",
+                "Portal do Paciente que garante o retorno e a fidelização contínua."
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-[#374151]">
                   <CheckCircle2 className="w-5 h-5 text-[#0066FF] shrink-0 mt-0.5" />
@@ -162,7 +162,7 @@ export const RecordsSection = () => {
         {/* CTA */}
         <div className="mt-20 text-center">
           <a
-            href="https://wa.me/5547988141031?text=Olá!%20Gostaria%20de%20agendar%20uma%20demonstração%20do%20Prontuário%20Eletrônico%20Frontline."
+            href="https://wa.me/5547996085407?text=Olá!%20Gostaria%20de%20agendar%20uma%20demonstração%20do%20Prontuário%20Eletrônico%20Frontline."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#111827] text-white font-bold text-base hover:scale-105 transition-all"

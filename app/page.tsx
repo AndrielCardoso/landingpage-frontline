@@ -3,12 +3,10 @@ import { Hero } from "./components/hero";
 import { AboutSection } from "./components/about";
 
 import { Features } from "./components/features";
-import { TotemSection } from "./components/totem";
-import { WhatsappSection } from "./components/whatsapp";
 import { RecordsSection } from "./components/records";
-import { DemoSection } from "./components/demo";
 import { StandardizationSection } from "./components/standardization";
 import { PricingSection } from "./components/pricing";
+import { TestimonialsSection } from "./components/testimonials";
 import { StepsSection } from "./components/steps";
 import { TrustSection } from "./components/trust";
 import { Footer } from "./components/footer";
@@ -34,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Frontline | Decisão Clínica Inteligente",
     description:
-      "Transforme sua farmácia com protocolos clínicos automatizados e segurança total.",
+      "Transforme sua farmácia com protocolos clínicos automatizados e rentabilidade acelerada.",
     url: "https://frontlinehelp.com.br",
     siteName: "Frontline Help",
     locale: "pt_BR",
@@ -63,14 +61,11 @@ export default function Home() {
       <Header />
       <Hero />
       <AboutSection />
-
       <Features />
-      <TotemSection />
-      <WhatsappSection />
       <RecordsSection />
-      <DemoSection />
       <StandardizationSection />
       <PricingSection />
+      <TestimonialsSection />
       <StepsSection />
       <TrustSection />
       <Footer />

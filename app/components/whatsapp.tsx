@@ -172,7 +172,7 @@ export const WhatsappSection = () => {
 
             <div className="w-full md:w-auto shrink-0 flex flex-col gap-4">
               <a
-                href="https://wa.me/5547988141031?text=Olá!%20Gostaria%20de%20integrar%20o%20Frontline%20IA%20no%20WhatsApp%20da%20minha%20farmácia."
+                href="https://wa.me/5547996085407?text=Olá!%20Gostaria%20de%20integrar%20o%20Frontline%20IA%20no%20WhatsApp%20da%20minha%20farmácia."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#111827] text-white font-bold text-base hover:scale-105 transition-all overflow-hidden"

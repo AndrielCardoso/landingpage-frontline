@@ -7,23 +7,23 @@ import { MessageCircle, CheckCircle2, ShieldCheck, Zap, Users, BookOpen } from "
 const teamBenefits = [
   {
     icon: ShieldCheck,
-    title: "Segurança no Balcão",
-    desc: "Apoio clínico constante para que sua equipe evite erros de dispensação e interações perigosas."
+    title: "Indicação Segura",
+    desc: "Apoio clínico constante para que sua equipe perca o medo de indicar soluções de alto valor."
   },
   {
     icon: Zap,
-    title: "Atendimento Ágil",
-    desc: "Acesso rápido a calculadoras, guias e bulas. Ninguém perde tempo pesquisando no Google."
+    title: "Atendimento Lucrativo",
+    desc: "Protocolos ágeis. Seu time resolve a dúvida rápido e tem tempo para oferecer a solução completa."
   },
   {
     icon: Users,
-    title: "Padronização de Equipe",
-    desc: "Todo farmacêutico do seu time terá o mesmo nível de excelência no atendimento ao paciente."
+    title: "Receita Previsível",
+    desc: "Todo farmacêutico do time passa a ter o mesmo poder de argumentação e conversão no balcão."
   },
   {
     icon: BookOpen,
-    title: "Onboarding Simplificado",
-    desc: "Novos colaboradores aprendem os protocolos clínicos da farmácia muito mais rápido."
+    title: "Rampagem Rápida",
+    desc: "Novos colaboradores aprendem a gerar valor e faturamento no padrão da farmácia em poucos dias."
   }
 ];
 
@@ -42,12 +42,12 @@ export const PricingSection = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-              Capacite a sua equipe.
+              Equipe empoderada.
               <br />
-              <span className="text-[#4B5563]">Escale sua farmácia.</span>
+              <span className="text-[#4B5563]">Lucratividade escalada.</span>
             </h2>
             <p className="text-[#4B5563] max-w-2xl mx-auto">
-              O Frontline não é só para o paciente. É a ferramenta definitiva para dar confiança aos seus farmacêuticos e garantir que sua farmácia entregue um serviço de excelência, independente de quem esteja no balcão.
+              O Frontline é o motor de serviços da sua farmácia. A ferramenta definitiva para dar confiança à sua equipe, justificar seus preços e aumentar drasticamente o Lifetime Value (LTV) de cada cliente.
             </p>
           </motion.div>
 
@@ -84,7 +84,7 @@ export const PricingSection = () => {
               <p className="text-sm text-[#4B5563]">Fale com nosso time e descubra como podemos ajudar.</p>
             </div>
             <a
-              href="https://wa.me/5547988141031?text=Olá!%20Gostaria%20de%20falar%20com%20um%20consultor%20sobre%20como%20o%20Frontline%20pode%20ajudar%20minha%20equipe."
+              href="https://wa.me/5547996085407?text=Olá!%20Gostaria%20de%20falar%20com%20um%20consultor%20sobre%20como%20o%20Frontline%20pode%20ajudar%20minha%20equipe."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#0066FF] text-white font-semibold text-sm hover:bg-[#0052CC] transition-all w-full sm:w-auto shrink-0 shadow-[0_0_20px_rgba(0,102,255,0.2)]"

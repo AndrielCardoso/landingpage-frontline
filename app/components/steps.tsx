@@ -16,8 +16,8 @@ const steps = [
   },
   {
     number: "03",
-    title: "Comece no mesmo dia",
-    desc: "Você já pode usar os módulos e organizar rotinas e atendimentos com mais agilidade.",
+    title: "Fature no mesmo dia",
+    desc: "Sua equipe já pode usar os protocolos para oferecer serviços e produtos de forma segura e rentável.",
   },
 ];
 
@@ -73,7 +73,7 @@ export const StepsSection = () => {
                     whileInView={{ scaleY: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.3 }}
-                    className="w-px h-full min-h-[60px] bg-[#262630] my-2 origin-top" 
+                    className="w-px h-full min-h-[60px] bg-[#E5E7EB] my-2 origin-top" 
                   />
                 )}
               </div>

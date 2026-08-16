@@ -45,7 +45,7 @@ export const AboutSection = () => {
               <h2 className="text-3xl md:text-5xl font-bold tracking-tight leading-[1.1] mb-6">
                 Tecnologia clínica
                 <br />
-                <span className="text-[#4B5563]">que entende o balcão.</span>
+                <span className="text-[#4B5563]">que entende de negócios.</span>
               </h2>
               <div className="w-16 h-1 bg-[#0066FF] rounded-full" />
             </div>
@@ -54,36 +54,35 @@ export const AboutSection = () => {
             <div className="space-y-6">
               <p className="text-[#4B5563] text-lg leading-relaxed">
                 O <span className="text-[#111827] font-medium">Frontline Help</span> é
-                uma plataforma de suporte à decisão clínica projetada
-                especificamente para o dia a dia da farmácia. Não é um sistema
-                genérico adaptado, foi construído por quem vive o balcão.
+                a plataforma definitiva projetada não apenas para dar segurança clínica,
+                mas para fazer o balcão da sua farmácia faturar mais.
               </p>
               <p className="text-[#4B5563] text-lg leading-relaxed">
-                Com fluxogramas inteligentes, prontuário digital e cálculos
-                automatizados, o Frontline elimina o achismo e transforma cada
-                atendimento em uma experiência segura e padronizada.
+                Com nossos fluxogramas orientados à alta conversão e prontuário
+                que gera recorrência, você padroniza sua equipe para entregar serviços
+                lucrativos e blindar os clientes da concorrência.
               </p>
               <div className="flex items-center gap-8 pt-4">
                 <div>
                   <p className="text-3xl font-black text-[#111827]">
                     <AnimatedNumber value={98} suffix="%" />
                   </p>
-                  <p className="text-sm text-[#4B5563]">Precisão clínica</p>
+                  <p className="text-sm text-[#4B5563]">Retenção</p>
                 </div>
-                <div className="w-px h-12 bg-[#262630]" />
+                <div className="w-px h-12 bg-[#E5E7EB]" />
                 <div>
                   <p className="text-3xl font-black text-[#111827]">
-                    <AnimatedNumber value={2} suffix="x" />
+                    <AnimatedNumber value={30} suffix="%" />
                   </p>
-                  <p className="text-sm text-[#4B5563]">Mais agilidade</p>
+                  <p className="text-sm text-[#4B5563]">+ Ticket Médio</p>
                 </div>
-                <div className="w-px h-12 bg-[#262630]" />
+                <div className="w-px h-12 bg-[#E5E7EB]" />
                 <div>
                   <p className="text-3xl font-black text-[#111827]">
                     <AnimatedNumber value={100} suffix="%" />
                   </p>
 
-                  <p className="text-sm text-[#4B5563]">Digital</p>
+                  <p className="text-sm text-[#4B5563]">Escalável</p>
                 </div>
               </div>
             </div>

@@ -32,7 +32,7 @@ export const TrustSection = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="https://wa.me/5547988141031?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Frontline%20para%20minha%20empresa."
+              href="https://wa.me/5547996085407?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Frontline%20para%20minha%20empresa."
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-[#0066FF] text-white font-semibold hover:bg-[#0052CC] transition-all shadow-[0_0_30px_rgba(0,102,255,0.3)]"
@@ -42,20 +42,6 @@ export const TrustSection = () => {
             </a>
           </div>
 
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.2 }}
-          className="-mt-10 md:-mt-20 mx-auto w-full max-w-5xl relative flex justify-center"
-        >
-          <img 
-            src="/Frontline_Family.png" 
-            alt="Família Frontline"
-            className="w-full h-auto object-contain drop-shadow-2xl"
-          />
         </motion.div>
       </div>
     </section>
