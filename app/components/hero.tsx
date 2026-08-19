@@ -4,7 +4,38 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle } from "lucide-react";
 
+const phrases = [
+  "Sua farmácia vendendo melhor.",
+  "Sua farmácia lucrando mais.",
+  "Sua farmácia fidelizando pacientes.",
+  "Sua farmácia referência na cidade."
+];
+
 export const Hero = () => {
+  const [text, setText] = useState("");
+  const [phraseIndex, setPhraseIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const typingSpeed = isDeleting ? 30 : 80;
+    const currentPhrase = phrases[phraseIndex];
+
+    const timeout = setTimeout(() => {
+      if (!isDeleting && text === currentPhrase) {
+        setTimeout(() => setIsDeleting(true), 2000);
+      } else if (isDeleting && text === "") {
+        setIsDeleting(false);
+        setPhraseIndex((prev) => (prev + 1) % phrases.length);
+      } else {
+        setText(
+          currentPhrase.substring(0, text.length + (isDeleting ? -1 : 1))
+        );
+      }
+    }, typingSpeed);
+
+    return () => clearTimeout(timeout);
+  }, [text, isDeleting, phraseIndex]);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Atmospheric glow */}
@@ -21,14 +52,19 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-[1.2] sm:leading-[1.1] mb-6 max-w-5xl mx-auto"
+            className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-[1.2] sm:leading-[1.1] mb-6 max-w-5xl mx-auto h-auto min-h-[140px] sm:h-[140px] md:h-[160px]"
           >
             Sua equipe mais preparada.
             <br className="hidden sm:block" />
             Seu cliente mais próximo.
             <br className="hidden sm:block" />
-            <span className="text-[#0066FF] block sm:inline mt-2 sm:mt-0">
-              Sua farmácia vendendo melhor.
+            <span className="text-[#0066FF] block sm:inline mt-2 sm:mt-0 whitespace-normal sm:whitespace-nowrap">
+              {text}
+              <motion.span
+                animate={{ opacity: [1, 0] }}
+                transition={{ repeat: Infinity, duration: 0.8 }}
+                className="inline-block w-[3px] h-[0.9em] bg-[#0066FF] ml-1 align-middle -mt-1"
+              />
             </span>
           </motion.h1>
 
