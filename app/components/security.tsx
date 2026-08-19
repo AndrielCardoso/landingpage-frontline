@@ -75,11 +75,11 @@ export const SecuritySection = () => {
               className="relative"
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-[#0066FF]/20 to-transparent rounded-full blur-3xl opacity-50" />
-              <div className="relative z-10 w-full rounded-2xl overflow-hidden border border-[#E5E7EB] shadow-2xl bg-white">
+              <div className="relative z-10 w-full flex items-center justify-center">
                 <img 
-                  src="/laudo.png" 
-                  alt="Modelo de Laudo do Frontline Help" 
-                  className="w-full h-auto object-cover"
+                  src="/Frontline_Security.png" 
+                  alt="Segurança e Infraestrutura do Frontline Help" 
+                  className="w-full max-w-md h-auto object-contain drop-shadow-xl"
                 />
               </div>
             </motion.div>
