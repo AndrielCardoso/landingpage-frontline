@@ -67,7 +67,7 @@ export default function Home() {
       <Header />
       <Hero />
       <TrustSection />
-      {/* <DemoVideoSection /> */}
+      <DemoVideoSection />
       <BeforeAfterSection />
       <AboutSection />
       <Features />

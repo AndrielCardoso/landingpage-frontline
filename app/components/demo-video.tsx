@@ -33,23 +33,16 @@ export const DemoVideoSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="w-full aspect-video bg-[#F3F4F6] border border-[#E5E7EB] rounded-3xl overflow-hidden relative shadow-lg flex items-center justify-center group cursor-pointer hover:border-[#0066FF]/30 transition-colors"
+            className="w-full aspect-video bg-[#111827] rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center border-4 border-white"
           >
-            {/* 
-              TODO: QUANDO TIVER O VÍDEO PRONTO:
-              1. Substitua esta div abaixo pelo iframe do YouTube ou tag <video> 
-              2. Remova os ícones de Play e o texto de placeholder
-            */}
-            
-            <div className="absolute inset-0 bg-gradient-to-br from-[#0066FF]/5 to-transparent pointer-events-none" />
-            
-            <div className="flex flex-col items-center z-10">
-              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg mb-4 group-hover:scale-110 group-hover:shadow-xl group-hover:text-[#0066FF] transition-all">
-                <PlayCircle className="w-10 h-10 text-[#0066FF] ml-1" />
-              </div>
-              <p className="text-[#4B5563] font-medium">Demonstração (Em breve)</p>
-            </div>
-            
+            <video 
+              controls 
+              className="w-full h-full object-cover"
+              poster="/print1.png"
+            >
+              <source src="/divulgacao.mp4" type="video/mp4" />
+              Seu navegador não suporta vídeos.
+            </video>
           </motion.div>
 
           <motion.div
