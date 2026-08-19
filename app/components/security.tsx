@@ -55,12 +55,12 @@ export const SecuritySection = () => {
 
                 <div className="flex gap-4">
                   <div className="w-12 h-12 rounded-xl bg-white border border-[#E5E7EB] flex items-center justify-center shrink-0 shadow-sm">
-                    <Server className="w-6 h-6 text-[#6B7280]" />
+                    <FileText className="w-6 h-6 text-[#6B7280]" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-bold text-[#111827] mb-1">Armazenamento em Nuvem</h4>
+                    <h4 className="text-lg font-bold text-[#111827] mb-1">Laudos Oficiais (DSF)</h4>
                     <p className="text-[#4B5563] leading-relaxed">
-                      Dados protegidos e criptografados, sem risco de perdas caso o computador da farmácia queime ou seja formatado.
+                      Emissão automática e padronizada da Declaração de Serviços Farmacêuticos. Documento que protege o profissional juridicamente e fideliza o paciente.
                     </p>
                   </div>
                 </div>
@@ -75,20 +75,12 @@ export const SecuritySection = () => {
               className="relative"
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-[#0066FF]/20 to-transparent rounded-full blur-3xl opacity-50" />
-              <div className="bg-white p-10 rounded-[2rem] border border-[#E5E7EB] shadow-xl relative z-10 flex flex-col items-center text-center">
-                <div className="w-24 h-24 rounded-full bg-[#10B981]/10 flex items-center justify-center mb-6 border-8 border-white shadow-sm">
-                  <ShieldCheck className="w-10 h-10 text-[#10B981]" />
-                </div>
-                <h3 className="text-2xl font-bold text-[#111827] mb-3">Infraestrutura Segura</h3>
-                <p className="text-[#4B5563] mb-8 leading-relaxed">
-                  Operamos seguindo as melhores práticas de proteção de dados, garantindo tranquilidade total para você focar no balcão e no paciente.
-                </p>
-                <div className="w-full h-px bg-[#E5E7EB] mb-8" />
-                <div className="flex flex-wrap justify-center gap-3">
-                  <span className="px-4 py-2 bg-[#F3F4F6] text-[#4B5563] rounded-lg text-sm font-medium">Criptografia</span>
-                  <span className="px-4 py-2 bg-[#F3F4F6] text-[#4B5563] rounded-lg text-sm font-medium">Cloud Segura</span>
-                  <span className="px-4 py-2 bg-[#F3F4F6] text-[#4B5563] rounded-lg text-sm font-medium">Logs de Auditoria</span>
-                </div>
+              <div className="relative z-10 w-full rounded-2xl overflow-hidden border border-[#E5E7EB] shadow-2xl bg-white">
+                <img 
+                  src="/laudo.png" 
+                  alt="Modelo de Laudo do Frontline Help" 
+                  className="w-full h-auto object-cover"
+                />
               </div>
             </motion.div>
 

@@ -22,9 +22,6 @@ export const DemoVideoSection = () => {
               <br />
               <span className="text-[#0066FF]">em 60 segundos</span>
             </h2>
-            <p className="text-[#4B5563] text-lg max-w-2xl mx-auto">
-              Informação certa, no momento em que sua equipe precisa. O Frontline foi desenvolvido para fazer parte do atendimento — e não para criar mais etapas ou burocracia.
-            </p>
           </motion.div>
 
           {/* Player Box */}
