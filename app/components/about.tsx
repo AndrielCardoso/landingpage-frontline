@@ -62,27 +62,35 @@ export const AboutSection = () => {
                 têm a informação certa em segundos para dar um atendimento qualificado, enquanto
                 o paciente acompanha tudo em um portal exclusivo. É proximidade que gera lucro.
               </p>
-              <div className="flex items-center gap-8 pt-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-8 border-t border-[#E5E7EB]">
                 <div>
-                  <p className="text-3xl font-black text-[#111827]">
+                  <p className="text-3xl font-black text-[#111827] mb-1">
                     <AnimatedNumber value={98} suffix="%" />
                   </p>
-                  <p className="text-sm text-[#4B5563]">Retenção</p>
+                  <p className="text-sm font-bold text-[#111827]">Retenção</p>
+                  <p className="text-xs text-[#6B7280] mt-2 leading-relaxed">
+                    Das farmácias que assinam, quase nenhuma volta aos processos de papel ou Google.
+                  </p>
                 </div>
-                <div className="w-px h-12 bg-[#E5E7EB]" />
+                
                 <div>
-                  <p className="text-3xl font-black text-[#111827]">
+                  <p className="text-3xl font-black text-[#111827] mb-1">
                     <AnimatedNumber value={100} suffix="%" />
                   </p>
-                  <p className="text-sm text-[#4B5563]">Conectividade</p>
+                  <p className="text-sm font-bold text-[#111827]">Digital</p>
+                  <p className="text-xs text-[#6B7280] mt-2 leading-relaxed">
+                    Operação integral em nuvem. Se o computador da loja queimar, nenhum dado é perdido.
+                  </p>
                 </div>
-                <div className="w-px h-12 bg-[#E5E7EB]" />
+                
                 <div>
-                  <p className="text-3xl font-black text-[#111827]">
+                  <p className="text-3xl font-black text-[#111827] mb-1">
                     <AnimatedNumber value={10} suffix="x" />
                   </p>
-
-                  <p className="text-sm text-[#4B5563]">Mais Prático</p>
+                  <p className="text-sm font-bold text-[#111827]">Mais Rápido</p>
+                  <p className="text-xs text-[#6B7280] mt-2 leading-relaxed">
+                    Na consulta clínica em comparação com buscas em apostilas físicas ou bulários longos.
+                  </p>
                 </div>
               </div>
             </div>
