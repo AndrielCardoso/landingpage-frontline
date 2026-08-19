@@ -8,6 +8,10 @@ import { StandardizationSection } from "./components/standardization";
 import { PricingSection } from "./components/pricing";
 import { RoiSection } from "./components/roi";
 import { FaqSection } from "./components/faq";
+import { DemoVideoSection } from "./components/demo-video";
+import { BeforeAfterSection } from "./components/before-after";
+import { ManagersSection } from "./components/managers";
+import { SecuritySection } from "./components/security";
 import { TestimonialsSection } from "./components/testimonials";
 import { StepsSection } from "./components/steps";
 import { TrustSection } from "./components/trust";
@@ -62,15 +66,18 @@ export default function Home() {
     <main className="min-h-screen overflow-x-hidden">
       <Header />
       <Hero />
+      <TrustSection />
+      {/* <DemoVideoSection /> */}
+      <BeforeAfterSection />
       <AboutSection />
       <Features />
       <RecordsSection />
       <StandardizationSection />
+      <ManagersSection />
       <PricingSection />
       <RoiSection />
+      <SecuritySection />
       <TestimonialsSection />
-      <StepsSection />
-      <TrustSection />
       <FaqSection />
       <Footer />
     </main>
