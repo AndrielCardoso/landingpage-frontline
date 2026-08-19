@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 
 const footerLinks = {
   Produto: [
-    { label: "Recursos", href: "#recursos" },
-    { label: "Planos", href: "#planos" },
+    { label: "Como Funciona", href: "/como-funciona" },
+    { label: "Para Redes", href: "/redes" },
     { label: "Suporte", href: "/suporte" },
   ],
   Legal: [

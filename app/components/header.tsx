@@ -4,7 +4,10 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
-const navLinks: { label: string; href: string }[] = [];
+const navLinks: { label: string; href: string }[] = [
+  { label: "Como Funciona", href: "/como-funciona" },
+  { label: "Para Redes", href: "/redes" },
+];
 
 export const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -37,6 +40,15 @@ export const Header = () => {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-10">
+            {navLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                className="text-sm font-medium text-[#4B5563] hover:text-[#0066FF] transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
           </nav>
 
           {/* Desktop CTA */}
@@ -70,6 +82,15 @@ export const Header = () => {
             className="md:hidden bg-[#F4F4F5]/95 backdrop-blur-xl border-t border-white/5"
           >
             <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
+              {navLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="text-[#4B5563] hover:text-[#0066FF] font-medium py-2 border-b border-white/10"
+                >
+                  {link.label}
+                </a>
+              ))}
               <a
                 href="https://wa.me/5547996085407?text=Olá!%20Gostaria%20de%20falar%20com%20um%20consultor%20sobre%20o%20Frontline."
                 target="_blank"
