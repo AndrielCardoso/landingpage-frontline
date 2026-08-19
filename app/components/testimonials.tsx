@@ -7,18 +7,18 @@ import { Quote } from "lucide-react";
 const testimonials = [
   {
     title: "Caminho sem volta",
-    content: `"Eu não fico mais sem o Frontline, é um caminho sem volta, indispensável pra gente. Essencial, não dá mais pra ficar sem."`,
-    author: "— Proprietário de rede com 19 farmácias"
+    content: `"Eu não fico mais sem o Frontline Help, é um caminho sem volta, indispensável pra gente. Essencial, não dá mais pra ficar sem."`,
+    author: "Cristina Mosca (Farmácia FiqueBem)"
+  },
+  {
+    title: "Desempenho e Qualidade",
+    content: `"Após implementarmos o Frontline Help dentro da rede o desempenho dos colaboradores subiu e o reconhecimento por parte dos clientes também aumentou, hoje fazemos tudo com mais tranquilidade e sabendo a qualidade dos serviços que prestamos. O Frontline foi essencial nesse processo e continua sendo um diferencial para a rede."`,
+    author: "Rede ADM Pharma"
   },
   {
     title: "O cliente fica impressionado",
     content: `"O cliente sai impressionado. Ele recebe tudo no celular, a gente não perde tempo escrevendo papelzinho. Mudou a cara da farmácia."`,
-    author: "— Proprietário de rede com 8 farmácias"
-  },
-  {
-    title: "A equipe perdeu o medo",
-    content: `"Meus colaboradores estão muito mais confiantes. A informação tá na tela, o atendimento fica muito mais profissional e vende mais."`,
-    author: "— Gestor e proprietário de rede com 64 farmácias"
+    author: "Farmácia SuperPreço"
   }
 ];
 
