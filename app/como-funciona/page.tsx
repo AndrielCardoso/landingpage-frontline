@@ -11,21 +11,25 @@ const steps = [
     icon: Search,
     title: "1. A dúvida no balcão",
     desc: "O cliente chega com uma receita complexa, uma interação medicamentosa em potencial ou pedindo indicação de tratamento menor. O colaborador acessa rapidamente a Bula Inteligente do Frontline.",
+    image: "/print1.png"
   },
   {
     icon: FileText,
     title: "2. Informação em Segundos",
     desc: "Em poucos cliques, o sistema entrega posologia, alertas de interações, sugestões de perguntas clínicas e até fluxogramas de decisão. Tudo mastigado e padronizado.",
+    image: "/print2.png"
   },
   {
     icon: Handshake,
     title: "3. Atendimento e Venda Agregada",
     desc: "Com segurança técnica, o colaborador orienta o paciente com excelência e identifica naturalmente oportunidades éticas de venda de suplementos ou correlatos (Upsell/Cross-sell).",
+    image: undefined
   },
   {
     icon: Smartphone,
     title: "4. Prontuário e Portal do Paciente",
     desc: "Se necessário, o serviço farmacêutico (como aferição de pressão ou glicemia) é registrado na mesma hora, gerando um DSF. O paciente recebe o histórico completo direto no WhatsApp via Frontline Conecta.",
+    image: "/print3.png"
   }
 ];
 
@@ -77,26 +81,33 @@ export default function ComoFuncionaPage() {
                 </p>
               </motion.div>
 
-              {/* Screenshot Placeholder */}
+              {/* Screenshot Placeholder or Image */}
               <motion.div 
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, margin: "-100px" }}
                 className="flex-1 w-full"
               >
-                <div className="aspect-[4/3] w-full rounded-2xl bg-white border border-[#E5E7EB] shadow-xl overflow-hidden flex flex-col items-center justify-center relative group">
+                <div className={`w-full rounded-2xl bg-white border border-[#E5E7EB] shadow-xl overflow-hidden flex flex-col items-center justify-center relative group ${step.image ? '' : 'aspect-[4/3]'}`}>
                   <div className="absolute inset-0 bg-[#0066FF]/5 pointer-events-none" />
                   
-                  {/* TODO: ADICIONAR SCREENSHOT AQUI - Substitua o bloco abaixo pela tag <img /> do sistema real */}
-                  <div className="text-center p-6 relative z-10">
-                    <div className="w-16 h-16 rounded-xl bg-white border border-[#E5E7EB] shadow-sm flex items-center justify-center mx-auto mb-4">
-                      <Search className="w-6 h-6 text-[#9CA3AF]" />
+                  {step.image ? (
+                    <img 
+                      src={step.image} 
+                      alt={step.title} 
+                      className="w-full h-auto object-cover relative z-10"
+                    />
+                  ) : (
+                    <div className="text-center p-6 relative z-10">
+                      <div className="w-16 h-16 rounded-xl bg-white border border-[#E5E7EB] shadow-sm flex items-center justify-center mx-auto mb-4">
+                        <Search className="w-6 h-6 text-[#9CA3AF]" />
+                      </div>
+                      <p className="text-[#9CA3AF] font-medium text-sm">
+                        Espaço reservado para a tela do sistema
+                        <br />(Passo {idx + 1})
+                      </p>
                     </div>
-                    <p className="text-[#9CA3AF] font-medium text-sm">
-                      Espaço reservado para a tela do sistema
-                      <br />(Passo {idx + 1})
-                    </p>
-                  </div>
+                  )}
 
                 </div>
               </motion.div>
