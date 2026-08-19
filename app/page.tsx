@@ -14,7 +14,6 @@ import { ManagersSection } from "./components/managers";
 import { SecuritySection } from "./components/security";
 import { TestimonialsSection } from "./components/testimonials";
 import { StepsSection } from "./components/steps";
-import { TrustSection } from "./components/trust";
 import { Footer } from "./components/footer";
 import type { Metadata } from "next";
 
@@ -66,7 +65,6 @@ export default function Home() {
     <main className="min-h-screen overflow-x-hidden">
       <Header />
       <Hero />
-      <TrustSection />
       <DemoVideoSection />
       <BeforeAfterSection />
       <AboutSection />
