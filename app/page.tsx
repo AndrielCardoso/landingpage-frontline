@@ -6,6 +6,8 @@ import { Features } from "./components/features";
 import { RecordsSection } from "./components/records";
 import { StandardizationSection } from "./components/standardization";
 import { PricingSection } from "./components/pricing";
+import { RoiSection } from "./components/roi";
+import { FaqSection } from "./components/faq";
 import { TestimonialsSection } from "./components/testimonials";
 import { StepsSection } from "./components/steps";
 import { TrustSection } from "./components/trust";
@@ -65,9 +67,11 @@ export default function Home() {
       <RecordsSection />
       <StandardizationSection />
       <PricingSection />
+      <RoiSection />
       <TestimonialsSection />
       <StepsSection />
       <TrustSection />
+      <FaqSection />
       <Footer />
     </main>
   );
