@@ -52,7 +52,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-[1.2] sm:leading-[1.1] mb-6 max-w-5xl mx-auto h-auto min-h-[140px] sm:h-[140px] md:h-[160px]"
+            className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-[1.2] sm:leading-[1.1] mb-8 md:mb-10 max-w-5xl mx-auto min-h-[180px] sm:min-h-[190px] md:min-h-[220px]"
           >
             Sua equipe mais preparada.
             <br className="hidden sm:block" />
