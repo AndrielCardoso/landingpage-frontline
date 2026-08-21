@@ -70,7 +70,7 @@ export const PricingSection = () => {
               </div>
 
               <a
-                href="https://wa.me/5547996085407?text=Olá!%20Gostaria%20de%20assinar%20o%20Frontline%20Help%20para%20a%20minha%20farmácia."
+                href="https://wa.me/554797503304?text=Olá!%20Gostaria%20de%20assinar%20o%20Frontline%20Help%20para%20a%20minha%20farmácia."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center w-full gap-2 px-8 py-4 rounded-xl bg-[#0066FF] text-white font-bold text-lg hover:bg-[#0052CC] transition-all shadow-[0_0_20px_rgba(0,102,255,0.3)] hover:shadow-[0_0_30px_rgba(0,102,255,0.4)]"
@@ -99,7 +99,7 @@ export const PricingSection = () => {
                   Temos condições comerciais, implantação dedicada e treinamentos específicos para operações maiores (acima de 5 farmácias).
                 </p>
                 <a
-                  href="https://wa.me/5547996085407?text=Olá!%20Sou%20gestor%20de%20uma%20rede%20de%20farmácias%20e%20gostaria%20de%20entender%20as%20condições%20do%20Frontline%20para%20múltiplas%20lojas."
+                  href="https://wa.me/554797503304?text=Olá!%20Sou%20gestor%20de%20uma%20rede%20de%20farmácias%20e%20gostaria%20de%20entender%20as%20condições%20do%20Frontline%20para%20múltiplas%20lojas."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center w-full gap-2 px-6 py-3 rounded-xl bg-[#111827] text-white font-semibold hover:bg-[#374151] transition-all"

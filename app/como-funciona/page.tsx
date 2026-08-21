@@ -126,7 +126,7 @@ export default function ComoFuncionaPage() {
             Agende uma demonstração ao vivo com um de nossos consultores e descubra como o Frontline se adapta à realidade do seu balcão.
           </p>
           <a
-            href="https://wa.me/5547996085407?text=Olá!%20Gostaria%20de%20agendar%20uma%20demonstração%20ao%20vivo%20do%20Frontline."
+            href="https://wa.me/554797503304?text=Olá!%20Gostaria%20de%20agendar%20uma%20demonstração%20ao%20vivo%20do%20Frontline."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#0066FF] text-white font-semibold text-lg hover:bg-[#0052CC] transition-all shadow-[0_0_20px_rgba(0,102,255,0.3)]"

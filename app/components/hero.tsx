@@ -87,7 +87,7 @@ export const Hero = () => {
           >
             {/* CTA - Primary */}
             <a
-              href="https://wa.me/5547996085407?text=Olá!%20Conheci%20o%20Frontline%20pelo%20site%20e%20gostaria%20de%20entender%20melhor%20como%20funciona%20para%20minha%20farmácia."
+              href="https://wa.me/554797503304?text=Olá!%20Conheci%20o%20Frontline%20pelo%20site%20e%20gostaria%20de%20entender%20melhor%20como%20funciona%20para%20minha%20farmácia."
               target="_blank"
               rel="noopener noreferrer"
               className="group flex sm:inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#0066FF] text-white font-semibold text-base hover:bg-[#0052CC] transition-all duration-200 shadow-[0_0_30px_rgba(0,102,255,0.3)] hover:shadow-[0_0_40px_rgba(0,102,255,0.45)] w-full sm:w-auto"

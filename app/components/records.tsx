@@ -162,7 +162,7 @@ export const RecordsSection = () => {
         {/* CTA */}
         <div className="mt-20 text-center">
           <a
-            href="https://wa.me/5547996085407?text=Olá!%20Gostaria%20de%20agendar%20uma%20demonstração%20do%20Prontuário%20Eletrônico%20Frontline."
+            href="https://wa.me/554797503304?text=Olá!%20Gostaria%20de%20agendar%20uma%20demonstração%20do%20Prontuário%20Eletrônico%20Frontline."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#111827] text-white font-bold text-base hover:scale-105 transition-all"

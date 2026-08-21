@@ -56,7 +56,7 @@ export default function RedesPage() {
           </p>
 
           <a
-            href="https://wa.me/5547996085407?text=Olá!%20Sou%20gestor%20de%20uma%20rede%20e%20quero%20falar%20com%20um%20especialista%20do%20Frontline."
+            href="https://wa.me/554797503304?text=Olá!%20Sou%20gestor%20de%20uma%20rede%20e%20quero%20falar%20com%20um%20especialista%20do%20Frontline."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#111827] text-white font-bold text-lg hover:bg-[#374151] transition-all shadow-xl"
@@ -112,7 +112,7 @@ export default function RedesPage() {
             Agende uma reunião de diagnóstico com nosso time de implantação corporativa e desenharemos o rollout perfeito para as suas unidades.
           </p>
           <a
-            href="https://wa.me/5547996085407?text=Olá!%20Sou%20gestor%20de%20uma%20rede%20e%20quero%20agendar%20uma%20reunião%20corporativa."
+            href="https://wa.me/554797503304?text=Olá!%20Sou%20gestor%20de%20uma%20rede%20e%20quero%20agendar%20uma%20reunião%20corporativa."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#0066FF] text-white font-bold text-lg hover:bg-[#0052CC] transition-all"

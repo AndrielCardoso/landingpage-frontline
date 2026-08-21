@@ -147,7 +147,7 @@ export const TotemSection = () => {
               </ul>
 
               <a
-                href="https://wa.me/5547996085407?text=Olá!%20Gostaria%20de%20implantar%20o%20Totem%20na%20minha%20farmácia."
+                href="https://wa.me/554797503304?text=Olá!%20Gostaria%20de%20implantar%20o%20Totem%20na%20minha%20farmácia."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#0066FF] text-white font-semibold text-sm hover:bg-[#0052CC] transition-all"

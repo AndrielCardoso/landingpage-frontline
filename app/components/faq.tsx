@@ -104,7 +104,7 @@ export const FaqSection = () => {
             <h3 className="text-xl font-bold text-[#111827] mb-2">Ainda tem dúvidas?</h3>
             <p className="text-[#4B5563] mb-6">Nosso time está pronto para conversar com você.</p>
             <a
-              href="https://wa.me/5547996085407?text=Olá!%20Acessei%20o%20site%20mas%20fiquei%20com%20algumas%20dúvidas%20sobre%20o%20Frontline."
+              href="https://wa.me/554797503304?text=Olá!%20Acessei%20o%20site%20mas%20fiquei%20com%20algumas%20dúvidas%20sobre%20o%20Frontline."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#0066FF] text-white font-semibold hover:bg-[#0052CC] transition-all shadow-[0_0_20px_rgba(0,102,255,0.2)]"

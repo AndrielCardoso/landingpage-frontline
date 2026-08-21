@@ -32,7 +32,7 @@ export const TrustSection = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="https://wa.me/5547996085407?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Frontline%20para%20minha%20empresa."
+              href="https://wa.me/554797503304?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Frontline%20para%20minha%20empresa."
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-[#0066FF] text-white font-semibold hover:bg-[#0052CC] transition-all shadow-[0_0_30px_rgba(0,102,255,0.3)]"

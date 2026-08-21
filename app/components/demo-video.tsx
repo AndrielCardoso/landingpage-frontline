@@ -50,7 +50,7 @@ export const DemoVideoSection = () => {
             className="mt-12"
           >
             <a
-              href="https://wa.me/5547996085407?text=Olá!%20Gostaria%20de%20agendar%20uma%20demonstração%20do%20Frontline%20para%20minha%20farmácia."
+              href="https://wa.me/554797503304?text=Olá!%20Gostaria%20de%20agendar%20uma%20demonstração%20do%20Frontline%20para%20minha%20farmácia."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#0066FF] text-white font-semibold text-base hover:bg-[#0052CC] transition-all shadow-[0_0_20px_rgba(0,102,255,0.2)]"
