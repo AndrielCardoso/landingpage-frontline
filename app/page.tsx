@@ -14,6 +14,7 @@ import { ManagersSection } from "./components/managers";
 import { SecuritySection } from "./components/security";
 import { TestimonialsSection } from "./components/testimonials";
 import { StepsSection } from "./components/steps";
+import { ComparisonSection } from "./components/comparison";
 import { Footer } from "./components/footer";
 import type { Metadata } from "next";
 
@@ -72,6 +73,7 @@ export default function Home() {
       <RecordsSection />
       <StandardizationSection />
       <ManagersSection />
+      <ComparisonSection />
       <PricingSection />
       <RoiSection />
       <SecuritySection />
