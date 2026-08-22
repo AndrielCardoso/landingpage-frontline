@@ -21,7 +21,7 @@ const comparisonFeatures = [
     others: false,
   },
   {
-    name: "Fluxogramas Clínicos de Decisão (Árvore de Decisão Padronizada)",
+    name: "Cuidado Complementar (Sugestões Inteligentes de Upsell/Cross-sell Ético)",
     frontline: true,
     others: false,
   },
